@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresión de Experiencia</title>
+<style>
+    body {
+        font-family: monospace;
+        background-color: black;
+        color: green;
+        padding: 20px;
+        margin: 0; /* Evita márgenes predeterminados */
+        text-align: center; /* Centra todo el contenido */
+    }
+    .container {
+        display: inline-block; /* Alinea el contenedor en línea */
+        padding: 20px;
+        border: 2px solid green;
+        background-color: black;
+        box-shadow: 0 0 10px green;
+        overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
+    }
+    pre {
+        margin: 0; /* Evita márgenes predeterminados */
+        white-space: pre-wrap; /* Envuelve el texto */
+        font-size: 14px; /* Tamaño de fuente aumentado */
+        line-height: 1.5; /* Espaciado de línea aumentado */
+        width: 100%; /* Ajusta el ancho del pre */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Fija el ancho de la tabla */
+    }
+    th, td {
+        padding: 8px;
+        text-align: center; /* Centra el contenido */
+        border-bottom: 1px solid green;
+        width: 33%; /* Ancho fijo para cada columna */
+    }
+    th {
+        background-color: #222;
+        color: green;
+    }
+	/* Define el estilo para los enlaces */
+a, a:visited {
+    color: #930000; /* Cambia el color del texto de los enlaces a rojo */
+}
+</style>
+</head>
+<body bgcolor="#000000" text="#00FF00">
+
+<p>
+<img src="logo.png" alt="Logo" width="238" height="55">
+<br>
+<b><font face="Verdana" size="4">[D-E-L-U-X-I-A] - Progresión de Experiencia</font></b></p>
+<hr color="#00FF00">
+
+<p><font size="1" face="Verdana"><b><a href="wiki.html">Volver
+atras</a></b></font></p>
+<hr color="#00FF00">
+
+<div class="container">
+<pre>
+  ____________________________________________________________
+ /                                                            \
+|               Progresión de Experiencia                      |
+|______________________________________________________________|
+| Nivel | Experiencia Necesaria para Subir de Nivel | Porcentaje |
+|-------|-------------------------------------------|------------|
+|   1   |                  Calculando...            |     3%     |
+|   2   |                  Calculando...            |     3%     |
+|   3   |                  ...                      |     3%     |
+|  ...  |                  ...                      |     3%     |
+|  999  |                  Calculando...            |     3%     |
+ \______|___________________________________________|____________/
+</pre>
+</div>
+
+<script>
+  // Función para calcular la progresión de experiencia
+  function calcularProgresion() {
+    const baseExp = 450;
+    const incrementPercentage = 3;
+    const maxLevel = 999;
+    
+    // Obtener la tabla y establecer su ancho
+    const table = document.querySelector(".container pre");
+    table.style.width = "700px"; // Ancho fijo suficientemente grande para el nivel 999
+
+    // Limpiar el contenido existente
+    table.innerHTML = "";
+
+    // Agregar la estructura de la tabla
+    table.innerHTML += `
+  _________________________________________________
+ /                                                 \\
+|                                                  |
+|           Progresión de Experiencia              |
+|__________________________________________________|
+| Nivel |   Exp para Subir de Nivel   | Porcentaje |
+|-------|-----------------------------|------------|
+`;
+
+    // Calcular y agregar las filas de la tabla
+    let experiencia = baseExp;
+    for (let nivel = 1; nivel <= maxLevel; nivel++) {
+      table.innerHTML += `|   ${nivel}   |             ${experiencia}             |     ${incrementPercentage}%     |\n`;
+      
+      // Calcular la experiencia necesaria para el siguiente nivel
+      experiencia += Math.round(experiencia * (incrementPercentage / 100));
+    }
+
+    // Agregar el cierre de la tabla
+    table.innerHTML += ` \\______|___________________________________________|____________/\n`;
+  }
+
+  // Llamar a la función para calcular la progresión al cargar la página
+  calcularProgresion();
+</script>
+
+</body>
+</html>
