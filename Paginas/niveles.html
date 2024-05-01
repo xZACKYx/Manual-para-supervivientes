@@ -68,24 +68,22 @@ atras</a></b></font></p>
  /                                                            \
 |               Progresión de Experiencia                      |
 |______________________________________________________________|
-| Nivel | Experiencia Necesaria para Subir de Nivel | Porcentaje |
-|-------|-------------------------------------------|------------|
-|   1   |                  Calculando...            |     0%     |
-|   2   |                  Calculando...            |     0%     |
-|   3   |                  ...                      |     0%     |
-|  ...  |                  ...                      |     0%     |
-|  999  |                  Calculando...            |     0%     |
- \______|___________________________________________|____________/
+| Nivel | Experiencia Necesaria para Subir de Nivel |
+|-------|-------------------------------------------|
+|   1   |                     0                       |
+|   2   |                   450                      |
+|  ...  |                  ...                      |
+|  999  |                449100                     |
+ \______|___________________________________________/
 </pre>
 </div>
 
 <script>
   // Función para calcular la progresión de experiencia
   function calcularProgresion() {
-    const baseExp = 450;
-    const incrementPercentage = 0;
     const maxLevel = 999;
-    
+    const baseExp = 0; // Experiencia necesaria para el nivel 1
+
     // Obtener la tabla y establecer su ancho
     const table = document.querySelector(".container pre");
     table.style.width = "700px"; // Ancho fijo suficientemente grande para el nivel 999
@@ -100,21 +98,18 @@ atras</a></b></font></p>
 |                                                  |
 |           Progresión de Experiencia              |
 |__________________________________________________|
-| Nivel |   Exp para Subir de Nivel   | Porcentaje |
-|-------|-----------------------------|------------|
+| Nivel |   Exp para Subir de Nivel   |
+|-------|-----------------------------|
 `;
 
     // Calcular y agregar las filas de la tabla
-    let experiencia = baseExp;
     for (let nivel = 1; nivel <= maxLevel; nivel++) {
-      table.innerHTML += `|   ${nivel}   |             ${experiencia}             |     ${incrementPercentage}%     |\n`;
-      
-      // Calcular la experiencia necesaria para el siguiente nivel
-      experiencia += Math.round(experiencia * (incrementPercentage / 100));
+      const experiencia = (nivel - 1) * 450; // Incremento de 450 en cada nivel a partir del nivel 2
+      table.innerHTML += `|   ${nivel}   |             ${experiencia}             |\n`;
     }
 
     // Agregar el cierre de la tabla
-    table.innerHTML += ` \\______|___________________________________________|____________/\n`;
+    table.innerHTML += ` \\______|___________________________________________/\n`;
   }
 
   // Llamar a la función para calcular la progresión al cargar la página
