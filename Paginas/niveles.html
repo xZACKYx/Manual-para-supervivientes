@@ -41,7 +41,7 @@
         width: 33%; /* Ancho fijo para cada columna */
     }
     th {
-        background-color: #222;
+        background-color: black;
         color: green;
     }
 	/* Define el estilo para los enlaces */
@@ -63,53 +63,41 @@ atras</a></b></font></p>
 <hr color="#00FF00">
 
 <div class="container">
-<pre>
-  ____________________________________________________________
- /                                                            \
-|               Progresión de Experiencia                      |
-|______________________________________________________________|
-| Nivel | Experiencia Necesaria para Subir de Nivel |
-|-------|-------------------------------------------|
-|   1   |                     0                       |
-|   2   |                   450                      |
-|  ...  |                  ...                      |
-|  999  |                449100                     |
- \______|___________________________________________/
-</pre>
+<table>
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Experiencia Necesaria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Añadir filas de la tabla aquí -->
+  </tbody>
+</table>
 </div>
 
 <script>
   // Función para calcular la progresión de experiencia
   function calcularProgresion() {
-    const maxLevel = 999;
-    const baseExp = 0; // Experiencia necesaria para el nivel 1
-
+    const baseExp = 450; // Experiencia base para subir de nivel
+    const maxLevel = 999; // Nivel máximo
+    
     // Obtener la tabla y establecer su ancho
-    const table = document.querySelector(".container pre");
-    table.style.width = "700px"; // Ancho fijo suficientemente grande para el nivel 999
+    const table = document.querySelector(".container table");
+    table.style.width = "400px"; // Ancho fijo suficientemente grande para los datos
 
-    // Limpiar el contenido existente
-    table.innerHTML = "";
-
-    // Agregar la estructura de la tabla
-    table.innerHTML += `
-  _________________________________________________
- /                                                 \\
-|                                                  |
-|           Progresión de Experiencia              |
-|__________________________________________________|
-| Nivel |   Exp para Subir de Nivel   |
-|-------|-----------------------------|
-`;
-
-    // Calcular y agregar las filas de la tabla
+    // Llenar la tabla con datos
+    let experiencia = 0;
     for (let nivel = 1; nivel <= maxLevel; nivel++) {
-      const experiencia = (nivel - 1) * 450; // Incremento de 450 en cada nivel a partir del nivel 2
-      table.innerHTML += `|   ${nivel}   |             ${experiencia}             |\n`;
+      // Calcular la experiencia necesaria para cada nivel
+      if (nivel !== 1) {
+        experiencia += baseExp;
+      }
+      // Agregar fila a la tabla
+      const newRow = table.querySelector("tbody").insertRow();
+      newRow.insertCell(0).textContent = nivel;
+      newRow.insertCell(1).textContent = experiencia;
     }
-
-    // Agregar el cierre de la tabla
-    table.innerHTML += ` \\______|___________________________________________/\n`;
   }
 
   // Llamar a la función para calcular la progresión al cargar la página
