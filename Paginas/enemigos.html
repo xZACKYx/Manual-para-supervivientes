@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progresión de Enemigos</title>
+<style>
+    body {
+        font-family: monospace;
+        background-color: black;
+        color: green;
+        padding: 20px;
+        margin: 0; /* Evita márgenes predeterminados */
+        text-align: center; /* Centra todo el contenido */
+    }
+    .container {
+        display: inline-block; /* Alinea el contenedor en línea */
+        padding: 20px;
+        border: 2px solid green;
+        background-color: black;
+        box-shadow: 0 0 10px green;
+        overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Fija el ancho de la tabla */
+    }
+    th, td {
+        padding: 8px;
+        text-align: center; /* Centra el contenido */
+        border-bottom: 1px solid green;
+        width: 33%; /* Ancho fijo para cada columna */
+    }
+    th {
+        background-color: black;
+        color: green;
+    }
+    /* Define el estilo para los enlaces */
+a, a:visited {
+    color: #930000; /* Cambia el color del texto de los enlaces a rojo */
+}
+</style>
+</head>
+<body bgcolor="#000000" text="#00FF00">
+
+<p>
+<img src="logo.png" alt="Logo" width="238" height="55">
+<br>
+<b><font face="Verdana" size="4">[D-E-L-U-X-I-A] - Lista de Enemigos</font></b></p>
+<hr color="#00FF00">
+
+<p><font size="1" face="Verdana"><b><a href="wiki.html">Volver atras</a></b></font></p>
+<hr color="#00FF00">
+
+<p style="color: red;">Nota: Los enemigos especiales y de ventos no están incluidos en esta tabla.</p>
+
+<div class="container">
+<table>
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Nombre</th>
+      <th>Daño por Enemigo</th>
+      <th>Experiencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Añadir filas de la tabla aquí -->
+    <tr>
+      <td>1</td>
+      <td>Rata</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Rata</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Zombi</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Zombi</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Zombi</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Zombi</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Necrófago</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Necrófago</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Necrófago</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Necrófago</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Mutante</td>
+      <td>7</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Mutante</td>
+      <td>9</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Mutante</td>
+      <td>11</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Mutante</td>
+      <td>13</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>Jefe</td>
+      <td>18</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>Jefe</td>
+      <td>23</td>
+      <td>126</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>Jefe</td>
+      <td>28</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>250</td>
+      <td>Jefe</td>
+      <td>33</td>
+      <td>226</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>Jefe</td>
+      <td>38</td>
+      <td>276</td>
+    </tr>
+    <tr>
+      <td>350</td>
+      <td>Jefe</td>
+      <td>43</td>
+      <td>326</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Jefe</td>
+      <td>48</td>
+      <td>376</td>
+    </tr>
+    <tr>
+      <td>450</td>
+      <td>Jefe</td>
+      <td>53</td>
+      <td>426</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>Jefe</td>
+      <td>58</td>
+      <td>476</td>
+    </tr>
+    <tr>
+      <td>550</td>
+      <td>Jefe</td>
+      <td>63</td>
+      <td>526</td>
+    </tr>
+    <tr>
+      <td>600</td>
+      <td>Jefe</td>
+      <td>68</td>
+      <td>576</td>
+    </tr>
+    <tr>
+      <td>650</td>
+      <td>Jefe</td>
+      <td>73</td>
+      <td>626</td>
+    </tr>
+    <tr>
+      <td>700</td>
+      <td>Jefe</td>
+      <td>78</td>
+      <td>676</td>
+    </tr>
+    <tr>
+      <td>750</td>
+      <td>Jefe</td>
+      <td>83</td>
+      <td>726</td>
+    </tr>
+    <tr>
+      <td>800</td>
+      <td>Jefe</td>
+      <td>88</td>
+      <td>776</td>
+    </tr>
+    <tr>
+      <td>850</td>
+      <td>Jefe</td>
+      <td>93</td>
+      <td>826</td>
+    </tr>
+    <tr>
+      <td>900</td>
+      <td>Jefe</td>
+      <td>98</td>
+      <td>876</td>
+    </tr>
+    <tr>
+      <td>950</td>
+      <td>Jefe</td>
+      <td>103</td>
+      <td>926</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>Jefe Final</td>
+      <td>108</td>
+      <td>976</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr color="#00FF00">
+
+        <div id="footer">
+  <div class="footCont">
+    <div style="float:left;width:680px;">
+      <div style="float:left;width:350px;text-align:justify;padding-right:25px;">
+        <div style="float:left;">
+
+      </div>
+          </div>
+            </div>
+            <div style="float:left;width:300px;text-align:center;">
+              
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+        <div style="height:5px;width:100%;background-color:#4D4D4D;"></div>
+        <div style="text-align:center;color:#00FF00;font-size:12px;padding:10px;">
+    &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
+    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
+    Contacto únicamente mediante Discord.
+</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- desactivar clic -->
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+</script>
+</body>
+</html>
