@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Rodrigo_Zacky">
+    <title>[D-E-L-U-X-I-A] - Progresión de Enemigos</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
+
+    <!-- IonIcons -->
+    <!-- <link rel="stylesheet" href="assets/css/ionicons.min.css"> -->
+    <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- END: Styles -->
+
+
+</head>
+<style>
+	b {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em; /* Este valor aumentará el tamaño del texto */
+}
+img {
+  display: block; /* Asegura que la imagen sea tratada como un bloque */
+  margin-left: auto; /* Centra horizontalmente la imagen */
+  margin-right: auto; /* Centra horizontalmente la imagen */
+}
+p, li {
+  color: white; /* Establece el color del texto en blanco */
+  
+}
+
+</style>
+<body>
+    <div class="nk-page-background op-2" data-video="" data-video-loop="true" data-video-mute="true"
+        data-video-volume="0" data-video-start-time="0" data-video-end-time="0" data-video-pause-on-page-leave="true"
+        style="background-image: url('assets/images/background-2.png');"></div>
+
+
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-left nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-navbar-left">
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+                    <div class="nk-nav-row">
+
+                        <a href="./" class="nk-nav-logo" style="pointer-events: none;">
+    <img src="assets/images/logo.png" alt="" width="250">
+</a>
+
+                    </div>
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav" data-nav-mobile="#nk-nav-mobile">
+                            
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">Discord</a>
+                            </li>
+                            <li>
+							<li class="active">
+                                <a href="wiki.html">Wiki</a>
+                            </li>
+                            <li>
+							
+                                <a href="creditos.html">Créditos</a>
+                            </li>
+                            <li>
+							
+                              <a href="manual.html">Primeros pasos</a>
+                            </li>
+                            <li>
+							
+                                <a href="politicas.html">Políticas de Privacidad</a>
+                            </li>
+                            <li>
+							
+                                <a href="reglas.html">Reglas</a>
+                            </li>
+			                <li>
+							
+                                <a href="terminosdeservicio.html">Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+                    END: Navigation
+                -->
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
+    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
+    Contacto únicamente mediante Discord.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar -->
+
+    <div class="nk-main">
+
+        <!-- START: Features -->
+        <div class="nk-box">
+            
+            <div class="nk-gap-4"></div>
+
+            <div class="nk-header-table-cell">
+                <div class="container">
+                    <div class="nk-header-text">
+
+    <p align="center">
+        <img src="assets/images/logo1.png" alt="Logo" width="auto" height="auto">
+        <font size=4 color="navajowhite"><b>[D-E-L-U-X-I-A] - Progresión de Enemigos</b><BR>
+<style>
+    body {
+        font-family: monospace;
+        background-color: black;
+        
+        padding: 20px;
+        margin: 0; /* Evita márgenes predeterminados */
+        text-align: center; /* Centra todo el contenido */
+    }
+	/* Estilo predeterminado de los enlaces */
+    td  {
+        color: #00FF00 !important; /* Color predeterminado del texto de los enlaces dentro de las celdas de la tabla */
+       
+    }
+    .container {
+        display: inline-block; /* Alinea el contenedor en línea */
+        padding: 20px;
+        border: 2px solid green;
+        background-color: black;
+        box-shadow: 0 0 10px green;
+        overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Fija el ancho de la tabla */
+    }
+    th, td {
+        padding: 8px;
+        text-align: center; /* Centra el contenido */
+        border-bottom: 1px solid green;
+        width: 25%; /* Ancho fijo para cada columna */
+    }
+    th {
+        background-color: black;
+        color: green;
+    }
+</style>
+<script>
+function showDescription(enemyName, event) {
+    // Evitar el comportamiento predeterminado del enlace
+    event.preventDefault();
+
+    var descriptionPopup = document.getElementById('descriptionPopup');
+    var descriptionTitle = document.getElementById('descriptionTitle');
+    var descriptionText = document.getElementById('descriptionText');
+
+    // Definir descripciones para cada enemigo
+    var descriptions = {
+        // Descripciones de los enemigos...
+    };
+
+    // Mostrar la descripción correspondiente
+    descriptionTitle.textContent = enemyName;
+    descriptionText.textContent = descriptions[enemyName];
+
+    descriptionPopup.style.display = 'block';
+}
+
+</script>
+</head>
+<body bgcolor="#000000" text="#00FF00">
+<hr color="#00FF00">
+
+<p><font size="3" ><b><a href="wiki.html">Volver atras</a></b></font></p>
+<hr color="#00FF00">
+
+<p style="color: navajowhite;">Nota: Los enemigos especiales y de eventos no están incluidos en esta tabla.</p>
+
+<div class="container">
+<table>
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Nombre</th>
+      <th>Daño por Enemigo</th>
+      <th>Experiencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Añadir filas de la tabla aquí -->
+    <tr>
+  <td>1-2</td>
+  <td><a href="#" onclick="showDescription('Rata Mutante')">Rata Mutante</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>3-4</td>
+  <td><a href="#" onclick="showDescription('Zombi Decaído')">Zombi Decaído</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>5-6</td>
+  <td><a href="#" onclick="showDescription('Necrófago Hambriento')">Necrófago Hambriento</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>7-8</td>
+  <td><a href="#" onclick="showDescription('Devorador Radiactivo')">Devorador Radiactivo</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>9-10</td>
+  <td><a href="#" onclick="showDescription('Mutante Desfigurado')">Mutante Desfigurado</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>11-12</td>
+  <td><a href="#" onclick="showDescription('Necrotrón')">Necrotrón</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>13-14</td>
+  <td><a href="#" onclick="showDescription('Engendro Tóxico')">Engendro Tóxico</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>15-16</td>
+  <td><a href="#" onclick="showDescription('Mutante Carnívoro')">Mutante Carnívoro</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>17-18</td>
+  <td><a href="#" onclick="showDescription('Espectro Infectado')">Espectro Infectado</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>19-20</td>
+  <td><a href="#" onclick="showDescription('Abominación Despiadada')">Abominación Despiadada</a></td>
+  <td>5</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>21-24</td>
+  <td><a href="#" onclick="showDescription('Devorador de Almas')">Devorador de Almas</a></td>
+  <td>7</td>
+  <td>14</td>
+</tr>
+<tr>
+  <td>25-28</td>
+  <td><a href="#" onclick="showDescription('Mutante Ruinoso')">Mutante Ruinoso</a></td>
+  <td>9</td>
+  <td>18</td>
+</tr>
+<tr>
+  <td>29-32</td>
+  <td><a href="#" onclick="showDescription('Superviviente Corrompido')">Superviviente Corrompido</a></td>
+  <td>11</td>
+  <td>22</td>
+</tr>
+<tr>
+  <td>33-36</td>
+  <td><a href="#" onclick="showDescription('Errante Desesperado')">Errante Desesperado</a></td>
+  <td>13</td>
+  <td>26</td>
+</tr>
+<tr>
+  <td>37-40</td>
+  <td><a href="#" onclick="showDescription('Mutante Enfurecido')">Mutante Enfurecido</a></td>
+  <td>15</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>41-44</td>
+  <td><a href="#" onclick="showDescription('Espectro Sanguinario')">Espectro Sanguinario</a></td>
+  <td>17</td>
+  <td>34</td>
+</tr>
+<tr>
+  <td>45-48</td>
+  <td><a href="#" onclick="showDescription('Alma Errante')">Alma Errante</a></td>
+  <td>19</td>
+  <td>38</td>
+</tr>
+<tr>
+  <td>49-52</td>
+  <td><a href="#" onclick="showDescription('Mutante del Caos')">Mutante del Caos</a></td>
+  <td>21</td>
+  <td>42</td>
+</tr>
+<tr>
+  <td>53-56</td>
+  <td><a href="#" onclick="showDescription('Engendro de las Sombras')">Engendro de las Sombras</a></td>
+  <td>23</td>
+  <td>46</td>
+</tr>
+<tr>
+  <td>57-60</td>
+  <td><a href="#" onclick="showDescription('Superviviente Inhumano')">Superviviente Inhumano</a></td>
+  <td>25</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>61-100</td>
+  <td><a href="#" onclick="showDescription('Araña Nuclear')">Araña Nuclear</a></td>
+  <td>30</td>
+  <td>100</td>
+</tr>
+<tr>
+  <td>101-150</td>
+  <td><a href="#" onclick="showDescription('Horror Mutante')">Horror Mutante</a></td>
+  <td>35</td>
+  <td>150</td>
+</tr>
+<tr>
+  <td>151-200</td>
+  <td><a href="#" onclick="showDescription('Titán Radiactivo')">Titán Radiactivo</a></td>
+  <td>40</td>
+  <td>200</td>
+</tr>
+<tr>
+  <td>201-250</td>
+  <td><a href="#" onclick="showDescription('Coloso Despierto')">Coloso Despierto</a></td>
+  <td>45</td>
+  <td>250</td>
+</tr>
+<tr>
+  <td>251-300</td>
+  <td><a href="#" onclick="showDescription('Abominación Nuclear')">Abominación Nuclear</a></td>
+  <td>50</td>
+  <td>300</td>
+</tr>
+<tr>
+  <td>301-350</td>
+  <td><a href="#" onclick="showDescription('Devorador de Mentiras')">Devorador de Mentiras</a></td>
+  <td>55</td>
+  <td>350</td>
+</tr>
+<tr>
+  <td>351-400</td>
+  <td><a href="#" onclick="showDescription('Erradicador Mutante')">Erradicador Mutante</a></td>
+  <td>60</td>
+  <td>400</td>
+</tr>
+<tr>
+  <td>401-450</td>
+  <td><a href="#" onclick="showDescription('Engendro Radiactivo')">Engendro Radiactivo</a></td>
+  <td>65</td>
+  <td>450</td>
+</tr>
+<tr>
+  <td>451-500</td>
+  <td><a href="#" onclick="showDescription('Monstruosidad Post-apocalíptica')">Monstruosidad Post-apocalíptica</a></td>
+  <td>70</td>
+  <td>500</td>
+</tr>
+<tr>
+  <td>501-550</td>
+  <td><a href="#" onclick="showDescription('Espectro de la Destrucción')">Espectro de la Destrucción</a></td>
+  <td>75</td>
+  <td>550</td>
+</tr>
+<tr>
+  <td>551-600</td>
+  <td><a href="#" onclick="showDescription('Tirano de los Desperdicios')">Tirano de los Desperdicios</a></td>
+  <td>80</td>
+  <td>600</td>
+</tr>
+<tr>
+  <td>601-650</td>
+  <td><a href="#" onclick="showDescription('Zombi Mutante')">Zombi Mutante</a></td>
+  <td>85</td>
+  <td>650</td>
+</tr>
+<tr>
+  <td>651-700</td>
+  <td><a href="#" onclick="showDescription('Rey del Desastre')">Rey del Desastre</a></td>
+  <td>90</td>
+  <td>700</td>
+</tr>
+<tr>
+  <td>701-750</td>
+  <td><a href="#" onclick="showDescription('Bestia del Apocalipsis')">Bestia del Apocalipsis</a></td>
+  <td>95</td>
+  <td>750</td>
+</tr>
+<tr>
+  <td>751-800</td>
+  <td><a href="#" onclick="showDescription('Titan de la Desolación')">Titan de la Desolación</a></td>
+  <td>100</td>
+  <td>800</td>
+</tr>
+<tr>
+  <td>801-850</td>
+  <td><a href="#" onclick="showDescription('Coloso Mutante')">Coloso Mutante</a></td>
+  <td>105</td>
+  <td>850</td>
+</tr>
+<tr>
+  <td>851-900</td>
+  <td><a href="#" onclick="showDescription('Zombi Devastador')">Zombi Devastador</a></td>
+  <td>110</td>
+  <td>900</td>
+</tr>
+<tr>
+  <td>901-950</td>
+  <td><a href="#" onclick="showDescription('Rey del Horror')">Rey del Horror</a></td>
+  <td>115</td>
+  <td>950</td>
+</tr>
+<tr>
+  <td>951-999</td>
+  <td><a href="#" onclick="showDescription('Aberración Nuclear')">Aberración Nuclear</a></td>
+  <td>120</td>
+  <td>999</td>
+</tr>
+
+    <!-- Agregar el resto de las filas aquí -->
+  </tbody>
+</table>
+</div>
+
+<!-- Descripción de los enemigos -->
+<div id="descriptionPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 20px; border-radius: 10px;">
+  <h2 id="descriptionTitle"></h2>
+  <p id="descriptionText"></p>
+  <button onclick="hideDescription()">Cerrar</button>
+</div>
+
+<hr color="#00FF00">
+
+<div id="footer">
+  <div class="footCont">
+    <div style="float:left;width:680px;">
+      <div style="float:left;width:350px;text-align:justify;padding-right:25px;">
+        <div style="float:left;">
+
+      </div>
+          </div>
+            </div>
+            <div style="float:left;width:300px;text-align:center;">
+              
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+        <div style="height:5px;width:100%;background-color:#4D4D4D;"></div>
+        <div style="text-align:center;color:#00FF00;font-size:12px;padding:10px;">
+    &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
+    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
+    Contacto únicamente mediante Discord.
+</div>
+      </div>
+    </div>
+  </body>
+
+<!-- desactivar clic -->
+
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+function showDescription(name) {
+    var descriptionPopup = document.getElementById('descriptionPopup');
+    var descriptionTitle = document.getElementById('descriptionTitle');
+    var descriptionText = document.getElementById('descriptionText');
+
+    // Definir descripciones para cada enemigo
+var descriptions = {
+    'Rata Mutante': 'Esta rata ha sido mutada por la radiación, lo que la hace más grande y agresiva que una rata común.',
+    'Zombi Decaído': 'Un humano que ha sido reanimado por la radiación, su piel está putrefacta y su mente está deteriorada.',
+    'Necrófago Hambriento': 'Un ser que se alimenta de carne en descomposición, su apetito nunca parece saciarse.',
+    'Devorador Radiactivo': 'Un monstruo voraz que emite radiación, su presencia contamina todo a su alrededor.',
+    'Mutante Desfigurado': 'Una criatura con mutaciones grotescas que le han deformado su cuerpo y mente.',
+    'Necrotrón': 'Una máquina de guerra necrótica, su única función es destruir todo a su paso.',
+    'Engendro Tóxico': 'Un ser que emite gases tóxicos, su contacto puede ser fatal para cualquier organismo vivo.',
+    'Mutante Carnívoro': 'Una bestia voraz que devora todo lo que encuentra, su hambre es insaciable.',
+    'Espectro Infectado': 'El espíritu de un ser vivo infectado por la radiación, su mera presencia puede causar enfermedades.',
+    'Abominación Despiadada': 'Una criatura de pesadilla creada por la radiación, su aspecto es grotesco y su ferocidad es inigualable.',
+    'Devorador de Almas': 'Una entidad oscura que se alimenta de las almas de los vivos, su presencia trae consigo el frío de la muerte.',
+    'Mutante Ruinoso': 'Una criatura que ha sobrevivido a la devastación nuclear, su resistencia es impresionante y su aspecto es desolador.',
+    'Superviviente Corrompido': 'Un humano que ha sucumbido a la corrupción de la radiación, su mente está dominada por la locura.',
+    'Errante Desesperado': 'Una sombra errante que busca desesperadamente una razón para existir en un mundo devastado.',
+    'Mutante Enfurecido': 'Una bestia enloquecida por la radiación, su furia es despiadada y su sed de sangre insaciable.',
+    'Espectro Sanguinario': 'Un espíritu atormentado por la sed de sangre, su presencia trae consigo el olor a muerte.',
+    'Alma Errante': 'El espíritu de un alma perdida en el caos del mundo post-apocalíptico, su sufrimiento es eterno.',
+    'Mutante del Caos': 'Una aberración de la radiación que desafía toda lógica, su mera existencia es una anomalía.',
+    'Engendro de las Sombras': 'Una criatura que habita en las sombras, su presencia es un recordatorio de la oscuridad que consume todo.',
+    'Superviviente Inhumano': 'Un humano que ha perdido toda humanidad en su lucha por la supervivencia, su corazón está lleno de oscuridad.',
+    'Araña Nuclear': 'Una araña gigante mutada por la radiación, su veneno es letal y su agresividad es despiadada.',
+    'Horror Mutante': 'Una abominación de la radiación, su aspecto es una pesadilla hecha realidad y su poder es indescriptible.',
+    'Titán Radiactivo': 'Una criatura colosal que emana radiación, su presencia distorsiona la realidad y su fuerza es imparable.',
+    'Coloso Despierto': 'Una entidad antigua despertada por la radiación, su ira es despiadada y su sed de destrucción es insaciable.',
+    'Abominación Nuclear': 'Una manifestación de la radiación en su forma más pura, su presencia trae consigo la aniquilación.',
+    'Devorador de Mentiras': 'Un ser oscuro que devora la verdad y emana mentiras, su influencia corrompe todo a su paso.',
+    'Erradicador Mutante': 'Una criatura diseñada para la aniquilación, su poder es inigualable y su furia es despiadada.',
+    'Engendro Radiactivo': 'Una entidad creada por la radiación, su mera presencia corrompe todo a su alrededor.',
+    'Monstruosidad Post-apocalíptica': 'Una aberración de la radiación que desafía toda comprensión, su existencia es un enigma.',
+    'Espectro de la Destrucción': 'Un espíritu atormentado por el deseo de destrucción, su presencia trae consigo la ruina.',
+    'Tirano de los Desperdicios': 'Un gobernante despiadado de los desiertos irradiados, su dominio es absoluto y su crueldad es legendaria.',
+    'Zombi Mutante': 'Un zombi evolucionado por la radiación, su resistencia es sorprendente y su ferocidad es implacable.',
+    'Rey del Desastre': 'Un gobernante de los desastres post-apocalípticos, su poder es inigualable y su crueldad es legendaria.',
+    'Bestia del Apocalipsis': 'Una criatura que simboliza el fin de los tiempos, su furia es despiadada y su sed de destrucción es insaciable.',
+    'Titan de la Desolación': 'Una entidad colosal que trae consigo la desolación, su presencia es un presagio de la ruina.',
+    'Coloso Mutante': 'Una criatura colosal nacida de la radiación, su poder es indescriptible y su ira es despiadada.',
+    'Zombi Devastador': 'Un zombi imbuido con la radiación, su presencia trae consigo la devastación y la muerte.',
+    'Rey del Horror': 'Un gobernante de los horrores post-apocalípticos, su influencia corrompe todo a su alrededor.',
+    'Aberración Nuclear': 'Una aberración de la radiación en su forma más pura, su poder es insondable y su presencia es una amenaza para toda la existencia.'
+};
+
+
+    // Mostrar la descripción correspondiente
+    descriptionTitle.textContent = name;
+    descriptionText.textContent = descriptions[name];
+
+    descriptionPopup.style.display = 'block';
+}
+
+function hideDescription() {
+    var descriptionPopup = document.getElementById('descriptionPopup');
+    descriptionPopup.style.display = 'none';
+}
+</script>
+
+    <!--
+    START: Share Buttons
+        .nk-share-buttons-left
+-->
+    <div class="nk-share-buttons d-none d-md-flex">
+        <ul>
+           <li>
+    <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">
+        <span class="nk-share-icon" title="Chatea con nosotros en discord" data-share="discord">
+            <i class="fab fa-discord"></i>
+        </span>
+        <span class="nk-share-name">Discord</span>
+    </a>
+</li>
+
+            <li>
+    <a href="https://www.patreon.com/Rodrigo_Zacky" target="_blank">
+        <span class="nk-share-icon" title="Patreon" data-share="patreon">
+            <i class="fab fa-patreon"></i>
+        </span>
+        <span class="nk-share-name">Patreon</span>
+    </a>
+</li>
+
+            <li>
+                <a href="https://github.com/xZACKYx/D-E-L-U-X-I-A/releases" target="_blank">
+                    <span class="nk-share-icon" title="Git" data-share="github">
+                        <span class="icon fa fa-github"></span>
+                    </span>
+                    <span class="nk-share-name">Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="assets/manual/index.html" target="_blank">
+                    <span class="nk-share-icon" title="Manual del Juego" data-share="wikipedia">
+                        <span class="icon fa fa-book"></span>
+                    </span>
+                    <span class="nk-share-name">Manual para supervivientes</span>
+                </a>
+            </li>
+<li>
+    <a href="https://rodrigo-zacky.itch.io" target="_blank">
+        <span class="nk-share-icon" title="itch-io" data-share="itch-io">
+            <i class="fab fa-itch-io"></i>
+        </span>
+        <span class="nk-share-name">itch-io</span>
+    </a>
+</li>
+
+
+
+
+            <li>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=E9ZTR5X6BBUG2" target="_blank">
+                    <span class="nk-share-icon" title="Paypal" data-share="Paypal">
+                        <span class="fab fa-paypal"></span>
+                    </span>
+                    <span class="nk-share-name">Paypal</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCKSc7Bb_QK_zU1oUsQyQ5Hw" target="_blank">
+                    <span class="nk-share-icon" title="Youtube" data-share="Youtube">
+                        <span class="fa fa-youtube"></span>
+                    </span>
+                    <span class="nk-share-name">Youtube</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    var crate = new Crate({
+      server: '957849032531796019',
+      channel: '957849033156722741'
+    })
+	
+	crate.toggle(false)
+	
+	// Display for 60 seconds + custom avatar
+	crate.notify({
+	  content: 'Nuevo Anuncio',
+	  timeout: 60000,
+      avatar: 'assets/images/deluxia_logo.png'
+	})
+	
+	// Listen for discord message events
+	crate.on('message', ({ message, channel }) => {
+		crate.notify('Nuevo Anuncio')
+		console.log(`New message in ${channel}`, message)
+	})   
+	
+</script>
+
+
+</html>

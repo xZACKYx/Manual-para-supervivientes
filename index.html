@@ -1,22 +1,543 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-<title>[D-E-L-U-X-I-A] - Manual para supervivientes.</title>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Rodrigo_Zacky">
+    <title>[D-E-L-U-X-I-A] - Manual para supervivientes</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
+
+    <!-- IonIcons -->
+    <!-- <link rel="stylesheet" href="assets/css/ionicons.min.css"> -->
+    <link href="https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- END: Styles -->
+
+
 </head>
 
-<frameset cols="168,*">
-  <frame name="contenido" target="principal" src="Paginas/menu.html">
-  <frame name="principal" src="Paginas/inicio.html" target="_self">
-  <noframes>
-  <body>
+<body>
+    <div class="nk-page-background op-2" data-video="" data-video-loop="true" data-video-mute="true"
+        data-video-volume="0" data-video-start-time="0" data-video-end-time="0" data-video-pause-on-page-leave="true"
+        style="background-image: url('assets/images/background-2.png');"></div>
 
-  <p>Esta página usa marcos, pero su explorador no los admite.</p>
 
-  </body>
-  </noframes>
-</frameset>
+    <!-- START: Page Border -->
+    <div class="nk-page-border">
+        <div class="nk-page-border-t"></div>
+        <div class="nk-page-border-r"></div>
+        <div class="nk-page-border-b"></div>
+        <div class="nk-page-border-l"></div>
+    </div>
+
+    <nav class="nk-navbar nk-navbar-side nk-navbar-left nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
+        id="nk-navbar-left">
+        <div class="nano">
+            <div class="nano-content">
+                <div class="nk-nav-table">
+                    <div class="nk-nav-row">
+
+                        <a href="./" class="nk-nav-logo" style="pointer-events: none;">
+    <img src="assets/images/logo.png" alt="" width="250">
+</a>
+
+                    </div>
+                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                        <ul class="nk-nav" data-nav-mobile="#nk-nav-mobile">
+                            <li class="active">
+                                <a href="#">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">Discord</a>
+                            </li>
+                            <li>
+                                <a href="wiki.html">Wiki</a>
+                            </li>
+                            <li>
+                                <a href="creditos.html">Créditos</a>
+                            </li>
+                            <li>
+                              <a href="manual.html">Primeros pasos</a>
+                            </li>
+                            <li>
+                                <a href="politicas.html">Políticas de Privacidad</a>
+                            </li>
+                            <li>
+                                <a href="reglas.html">Reglas</a>
+                            </li>
+			                <li>
+                                <a href="terminosdeservicio.html">Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+                    END: Navigation
+                -->
+                    <div class="nk-nav-row">
+                        <div class="nk-nav-footer">
+                            &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
+    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
+    Contacto únicamente mediante Discord.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar -->
+	
+    <!-- cookies -->
+<div class="cky-popup" id="cky-popup" style="display: none;">
+    <div class="cky-consent-bar" data-cky-tag="notice" style="border-color: #2a2a2a; background-color: #121212;">
+        <div class="cky-notice">
+            <p class="cky-title" role="heading" aria-level="1" data-cky-tag="title" style="color: #d0d0d0;">Valoramos tu privacidad</p>
+            <div class="cky-notice-group">
+                <div class="cky-notice-des" data-cky-tag="description" style="color: #d0d0d0;">
+                    <p>Nuestras cookies están determinadas por los servicios de GitHub para mejorar su experiencia en nuestro sitio, mostrarle anuncios o contenido personalizado y analizar nuestro tráfico. Al hacer clic en 'Aceptar', usted da su consentimiento a nuestro uso de las cookies.</p>
+                </div>
+                <div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons">
+                    <button class="cky-btn cky-btn-accept" aria-label="Aceptar todo" data-cky-tag="accept-button" style="color: #d0d0d0; border-color: #1863dc; background-color: #1863dc;" onclick="hidePopup()">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- END: cookies -->
+        <!-- START: Features -->
+        <div class="nk-box">
+            
+            <div class="nk-gap-4"></div>
+
+            <div class="nk-header-table-cell">
+                <div class="container">
+                    <div class="nk-header-text">
+<center>
+                        <h2 class="nk-title display-1">
+                            <span style="color:#00FF00">[D-E-L-U-X-I-A]<span> 
+                            <span style="color:red">Online<span>
+                        </h2>
+						
+                        <img src="assets/images/logo1.png" width="auto" height="300px">
+                        <br>
+                        <br>
+                        <a id="autoupdateDownload" href="#" class="nk-btn nk-btn-lg" style="font-size: 45px;">
+                            <ion-icon name="cloud-download"></ion-icon> Descargar Juego.
+                        </a>
+
+                        <h2 class="nk-title display-5">
+							<br>
+                            <span>[D-E-L-U-X-I-A] - Manual para supervivientes<span> 
+							<br>
+                            <span style="color:goldenrod"><span>
+                        </h2>
+                        
+                        </br>
+                        </br>
+                        <span>
+                            Si el boton de descarga no funciona puedes bajar la ultima version del juego de Github: </br>
+                            <a href="https://github.com/xZACKYx/D-E-L-U-X-I-A/releases">https://github.com/xZACKYx/D-E-L-U-X-I-A/releases</a>
+                        </span>
+                        
+                        </br>
+                        </br>
+                        
+                        <h6>Requisitos:</h6>
+<span>
+    Tener Discord</br>
+    <a href="https://discord.com">Descargar Discord</a></br>
+</span>
+<br>
+<span>
+    Estar en el servidor oficial de [D-E-L-U-X-I-A]</br>
+    <a href="https://discord.com/invite/phAkPfbSrQ">Servidor de [D-E-L-U-X-I-A]</a></br>
+</span>
+<br>
+<span>
+    Sistema Operativo: Windows 7+ (.Net Framework 7.0)
+    <a href="https://dotnet.microsoft.com/es-es/download/dotnet/thank-you/sdk-7.0.404-windows-x64-installer">Windows x64</a>,
+    <a href="https://dotnet.microsoft.com/es-es/download/dotnet/thank-you/sdk-7.0.404-windows-x86-installer">Windows x32</a>
+</span>
+<br>
+<span>
+    Procesador: Intel Core 2Duo+ o equivalente AMD</br>
+    RAM: 1 GB</br>
+    Video: 1 GB</br>
+    OpenGL: Versión 2.1+</br>
+    Almacenamiento: 10.5 GB de espacio disponible</br>
+</span>
+
+
+                        </br>                  
+                        <span>
+                            .Net Framework 7.0 o Superior: </br>
+                            <a href="https://dotnet.microsoft.com/es-es/download/dotnet/thank-you/sdk-7.0.404-windows-x64-installer">Windows x64.</a></br>
+                            <a href="https://dotnet.microsoft.com/es-es/download/dotnet/thank-you/sdk-7.0.404-windows-x86-installer">Windows x32.</a>
+                        </span>
+</center>
+                    </div>
+<br>
+                </div>
+            </div>
+           
+            <div class="row align-items-center">
+
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <div class="nk-box-3 bg-dark-1">
+                                <div class="nk-ibox">
+                                    <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                        <ion-icon name="game-controller-outline"></ion-icon>
+                                    </div>
+                                    <div class="nk-ibox-cont">
+                                        <h2 class="nk-ibox-title">Manual para supervivientes</h2>
+                                        <span>Consejos para principiantes. Si eres nuevo en [D-E-L-U-X-I-A], Antes de sumergirte, es crucial que comprendas lo siguiente</span>
+                                        </br><br>
+                                        <a href="manual.html" class="nk-btn nk-btn-lg">
+                                            <span>
+                                                <ion-icon name=""></ion-icon> Ver el Manual para supervivientes
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nk-box-3 bg-dark-2">
+                                <div class="nk-ibox">
+                                    <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                        <ion-icon name="globe-outline"></ion-icon>
+                                    </div>
+                                    <div class="nk-ibox-cont">
+                                        <h2 class="nk-ibox-title">Sitio web oficial</h2>
+                                        <span>Visita el sitio web oficial de [D-E-L-U-X-I-A] :D</span><br>
+                                        </br><br>
+                                        <a href="https://d-e-l-u-x-i-a.rf.gd" target="_blank" class="nk-btn nk-btn-lg">
+
+                                            <span>
+                                                <ion-icon name=""></ion-icon> Sitio web oficial
+                                            </span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nk-box-3 bg-dark-2">
+                                <div class="nk-ibox">
+                                    <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                        <ion-icon name="shield-half-outline"></ion-icon>
+                                    </div>
+                                    <div class="nk-ibox-cont">
+                                        <h2 class="nk-ibox-title">SOPORTE TÉCNICO</h2>
+                                        <span>Estamos aquí para ayudarte con cualquier problema que puedas tener, agradecemos tu cooperación y comprensión, si tienes alguna pregunta o inquietud, no dudes en contactarnos. Estamos aquí para ayudarte y garantizar una experiencia positiva para todos.</span>
+                                        </br><br>
+                                        <a href="https://discord.com/channels/957849032531796019/957849033156722744" target="_blank" class="nk-btn nk-btn-lg">
+
+                                            <span>
+                                                <ion-icon name=""></ion-icon> Soporte Técnico en Discord
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="nk-box-3 bg-dark-1">
+                                <div class="nk-ibox">
+                                    <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                        <ion-icon name="mail-unread-outline"></ion-icon>
+                                    </div>
+                                    <div class="nk-ibox-cont">
+                                        <h2 class="nk-ibox-title">Sugerencias</h2>
+                                        <span>En [D-E-L-U-X-I-A], nos esforzamos por crear un entorno donde cada voz importa. Valoramos profundamente sus opiniones y sugerencias, ya que son la clave para impulsar el crecimiento y la mejora continua de nuestra comunidad.</span>
+                                        </br><br>
+                                        <a href="https://discord.com/channels/957849032531796019/958462343988264981" target="_blank" class="nk-btn nk-btn-lg">
+                                            <span>
+                                                <ion-icon name=""></ion-icon> ¡Mándanos tus sugerencias!
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+		<br>
+<div class="nk-box bg-dark-1 text-white text-center">
+    <div class="nk-gap-4"></div>
+    <div class="container">
+        <div>
+		<br>
+            <h3 class="nk-title-back" style="color: navajowhite;">Equipo Activo</h3>
+
+			<br>
+            <h2 class="nk-title h1">Te presentamos el staff del Server:</h2>
+			<br>
+            <div class="nk-title-sep-icon">
+                <ion-icon name="bonfire"></ion-icon>
+            </div>
+
+            <h5>ZACKY <span style="color: gold">[CREADOR]</span></h5>
+			<h5>Proximamente  <span style="color: cyan;">[Moderador]</span></h5>
+			<h5>Proximamente  <span style="color: cyan;">[Moderador]</span></h5>
+			<h5>Proximamente  <span style="color: cyan;">[Moderador]</span></h5>
+
+
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+        <footer class="nk-footer nk-footer-parallax nk-footer-parallax-opacity">
+            <img class="nk-footer-top-corner" src="assets/images/footer-corner.png" alt="">
+
+            <div class="container">
+                <h4>
+                    Estamos constantemente trabajando en mejoras y arreglo de bugs.
+                    Unite a nuestra comunidad para poder ayudar a mejorar el juego
+                </h4> 
+                <div class="nk-gap-2"></div>
+                <h2 class="nk-title"><strong>Nos ayudan a estar online:</strong></h2>
+
+                <div class="nk-footer-logos" style="display: flex; justify-content: space-around; align-items: center;">
+    <a href="https://www.patreon.com/Rodrigo_Zacky" target="_blank" class="nk-logo-link" style="width: 200px; height: 200px; display: flex; justify-content: center; align-items: center; margin: 0 10px;">
+        <img class="nk-img" src="assets/images/patreon.png" alt="Patreon" style="max-width: 100%; max-height: 100%;">
+    </a>
+
+    <a href="https://www.paypal.com/donate/?hosted_button_id=E9ZTR5X6BBUG2" target="_blank" class="nk-logo-link" style="width: 200px; height: 200px; display: flex; justify-content: center; align-items: center; margin: 0 10px;">
+        <img class="nk-img" src="assets/images/paypal.png" alt="Paypal" style="max-width: 100%; max-height: 100%;">
+    </a>
+
+    <a href="https://discord.com/channels/957849032531796019/1234388926110765118/1237364010144501820" target="_blank" class="nk-logo-link" style="width: 200px; height: 200px; display: flex; justify-content: center; align-items: center; margin: 0 10px;">
+        <img class="nk-img" src="assets/images/suscripción.png" alt="Suscripción" style="max-width: 100%; max-height: 100%;">
+    </a>
+
+    <a href="https://rodrigo-zacky.itch.io" target="_blank" class="nk-logo-link" style="width: 200px; height: 200px; display: flex; justify-content: center; align-items: center; margin: 0 10px;">
+        <img class="nk-img" src="assets/images/itchio.png" alt="Itchio" style="max-width: 100%; max-height: 100%;">
+    </a>
+
+    <a href="https://discord.com/channels/957849032531796019/1178042526398156810" target="_blank" class="nk-logo-link" style="width: 200px; height: 200px; display: flex; justify-content: center; align-items: center; margin: 0 10px;">
+        <img class="nk-img" src="assets/images/deluxia.png" alt="Deluxia" style="max-width: 100%; max-height: 100%;">
+    </a>
+</div>
+
+
+                <div class="nk-gap"></div>
+
+                <h3 class="nk-title"><strong>Donaciones:</strong></h3>
+                <p>
+                    <span> El principal objetivo del proyecto es que sea un espacio transparente para que se pueda compartir un juego que nos une a todos, en [D-E-L-U-X-I-A] cada uno pone lo que puede ya sea programando, actualizando guias, reportando bugs, jugando en el server haciendo desde quests en solitario, creando tu clan o al hacer duelos con otros jugadores, ser miembro activo o simplemente ser parte de la comunidad en el chat.</span>
+                </p>
+                <p>
+                    <span>En nuestro servidor de [D-E-L-U-X-I-A]  no tenemos un mercado para comprar items por plata real ni lo tendremos ya que nunca fue un juego pensado para ser de la modalidad <b>pay-to-win</b>. Mantener el juego activo 24/7 sin embargo si requiere dinero.</span>
+                    <span>Si estas interesado en darnos una mano para mantener el juego funcionando con [Donaciones], son una forma de recompensa y participación en nuestro servidor, pero NO constituyen una moneda virtual. Estos puntos son exclusivamente utilizados para desbloquear contenido y niveles dentro de nuestra comunidad. ¡Disfruta de las ventajas de tu participación activa en nuestro servidor! <a target="_blank" href="https://discord.com/channels/957849032531796019/1178042526398156810">CLICK AQUI</a>.</span>
+                </p>
+		    
+	          	<br>
+                <div class="nk-footer-links">
+                    <img class="nk-img" src="https://worldnutrijournal.org/OJS/public/site/images/admin/Screen_Shot_2023-11-08_at_13.35_.13_.png" alt="" width="120">
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" class="link-effect">Terminos y
+                        Condiciones de la Licencia</a>
+                </div>
+
+                <div class="nk-gap-4"></div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+
+    </div>
+
+    <!--
+    START: Share Buttons
+        .nk-share-buttons-left
+-->
+    <div class="nk-share-buttons d-none d-md-flex">
+        <ul>
+           <li>
+    <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">
+        <span class="nk-share-icon" title="Chatea con nosotros en discord" data-share="discord">
+            <i class="fab fa-discord"></i>
+        </span>
+        <span class="nk-share-name">Discord</span>
+    </a>
+</li>
+
+            <li>
+    <a href="https://www.patreon.com/Rodrigo_Zacky" target="_blank">
+        <span class="nk-share-icon" title="Patreon" data-share="patreon">
+            <i class="fab fa-patreon"></i>
+        </span>
+        <span class="nk-share-name">Patreon</span>
+    </a>
+</li>
+
+            <li>
+                <a href="https://github.com/xZACKYx/D-E-L-U-X-I-A/releases" target="_blank">
+                    <span class="nk-share-icon" title="Git" data-share="github">
+                        <span class="icon fa fa-github"></span>
+                    </span>
+                    <span class="nk-share-name">Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="assets/manual/index.html" target="_blank">
+                    <span class="nk-share-icon" title="Manual del Juego" data-share="wikipedia">
+                        <span class="icon fa fa-book"></span>
+                    </span>
+                    <span class="nk-share-name">Manual para supervivientes</span>
+                </a>
+            </li>
+<li>
+    <a href="https://rodrigo-zacky.itch.io" target="_blank">
+        <span class="nk-share-icon" title="itch-io" data-share="itch-io">
+            <i class="fab fa-itch-io"></i>
+        </span>
+        <span class="nk-share-name">itch-io</span>
+    </a>
+</li>
+
+
+
+
+            <li>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=E9ZTR5X6BBUG2" target="_blank">
+                    <span class="nk-share-icon" title="Paypal" data-share="Paypal">
+                        <span class="fab fa-paypal"></span>
+                    </span>
+                    <span class="nk-share-name">Paypal</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCKSc7Bb_QK_zU1oUsQyQ5Hw" target="_blank">
+                    <span class="nk-share-icon" title="Youtube" data-share="Youtube">
+                        <span class="fa fa-youtube"></span>
+                    </span>
+                    <span class="nk-share-name">Youtube</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+	<script>
+    // Función para establecer una cookie
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Función para obtener el valor de una cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Función para verificar si se ha aceptado la cookie
+    function checkCookie() {
+        var cookieAccepted = getCookie("cookieAccepted");
+        if (cookieAccepted) {
+            // Si la cookie ha sido aceptada, ocultar el pop-up
+            hidePopup();
+        }
+    }
+
+    // Función para mostrar el pop-up
+    function showPopup() {
+        document.getElementById("cky-popup").style.display = "block";
+    }
+
+    // Función para ocultar el pop-up y establecer la cookie
+    function hidePopup() {
+        document.getElementById("cky-popup").style.display = "none";
+        setCookie("cookieAccepted", "true", 365); // La cookie expira en 1 año
+    }
+
+    // Verificar la cookie cuando se cargue la página
+    window.onload = function () {
+        checkCookie();
+    };
+</script>
+
+	<script>
+    // Función para mostrar el pop-up
+    function showPopup() {
+        document.getElementById("cky-popup").style.display = "block";
+    }
+
+    // Función para ocultar el pop-up
+    function hidePopup() {
+        document.getElementById("cky-popup").style.display = "none";
+    }
+
+    // Llamada a la función para mostrar el pop-up
+    showPopup();
+</script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    var crate = new Crate({
+      server: '957849032531796019',
+      channel: '957849033156722741'
+    })
+	
+	crate.toggle(false)
+	
+	// Display for 60 seconds + custom avatar
+	crate.notify({
+	  content: 'Nuevo Anuncio',
+	  timeout: 60000,
+      avatar: 'assets/images/deluxia_logo.png'
+	})
+	
+	// Listen for discord message events
+	crate.on('message', ({ message, channel }) => {
+		crate.notify('Nuevo Anuncio')
+		console.log(`New message in ${channel}`, message)
+	})   
+	
+</script>
+<!-- desactivar clic -->
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+</script>
+
 
 </html>
