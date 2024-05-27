@@ -209,7 +209,7 @@ atras</a></b></font></p>
 </div>
 
 <script>
-  // Función para calcular la progresión de experiencia
+  // Función para calcular la progresión de experiencia con un incremento del 3% por nivel
   function calcularProgresion() {
     const baseExp = 450; // Experiencia base para subir de nivel
     const maxLevel = 999; // Nivel máximo
@@ -219,16 +219,15 @@ atras</a></b></font></p>
     table.style.width = "400px"; // Ancho fijo suficientemente grande para los datos
 
     // Llenar la tabla con datos
-    let experiencia = 0;
+    let experiencia = baseExp; // Experiencia inicial para el nivel 1
     for (let nivel = 1; nivel <= maxLevel; nivel++) {
-      // Calcular la experiencia necesaria para cada nivel
-      if (nivel !== 1) {
-        experiencia += baseExp;
-      }
       // Agregar fila a la tabla
       const newRow = table.querySelector("tbody").insertRow();
       newRow.insertCell(0).textContent = nivel;
-      newRow.insertCell(1).textContent = experiencia;
+      newRow.insertCell(1).textContent = Math.round(experiencia); // Mostrar solo enteros
+
+      // Calcular la experiencia necesaria para el siguiente nivel
+      experiencia *= 1.03; // Incremento del 3%
     }
   }
 
