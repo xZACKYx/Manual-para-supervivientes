@@ -331,33 +331,92 @@ document.addEventListener('contextmenu', function(e) {
                     <span class="nk-share-name">Youtube</span>
                 </a>
             </li>
+			<br>
+			<br>
+<div id="discordIcon" style="width: 50px; height: 50px; position: fixed; bottom: 20px; right: 20px;">
+    <div id="iconMain" style="width: 100%; height: 100%; background: url('https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png') no-repeat center center; background-size: contain; border-radius: 50%; position: relative;">
+        <span id="notificationIndicator" style="position: absolute; top: -5px; right: -5px; width: 10px; height: 10px; background-color: red; border-radius: 50%; display: none;"></span>
+    </div>
+</div>
+
+<div id="discordWidgetContainer" style="display: none; position: fixed; width: 400px; height: 600px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); overflow: hidden; border-radius: 8px;">
+    <div id="discordWidget" style="width: 100%; height: 100%; overflow: hidden; background-color: #36393f;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background-color: #7289da; color: #fff; padding: 10px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+            <div style="font-size: 20px; font-weight: bold; text-align: center; width: 100%;">[D-E-L-U-X-I-A]</div>
+            <button id="closeBtn" style="position: relative; cursor: pointer; color: white; background-color: #7289da; padding: 5px; border: none; border-radius: 3px;">
+                X
+            </button>
+        </div>
+        <iframe id="discordIframe" src="https://discord.com/widget?id=957849032531796019&theme=dark&channel_id=957849033156722741&lang=es" width="400" height="550" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+</div>
+
+<script>
+    var discordWidgetContainer = document.getElementById('discordWidgetContainer');
+    var discordIframe = document.getElementById('discordIframe');
+    var isDragging = false;
+    var offset = { x: 0, y: 0 };
+
+    // Mostrar y ocultar el widget al hacer clic en el icono y el botón de cierre
+    document.getElementById('discordIcon').onclick = function() {
+        if (discordWidgetContainer.style.display === 'block') {
+            discordWidgetContainer.style.opacity = '0';
+            setTimeout(function() {
+                discordWidgetContainer.style.display = 'none';
+            }, 500); // Ajustar el tiempo según sea necesario para una animación suave
+        } else {
+            discordWidgetContainer.style.display = 'block';
+            setTimeout(function() {
+                discordWidgetContainer.style.opacity = '1';
+            }, 50); // Ajustar el tiempo según sea necesario para una animación suave
+        }
+    };
+
+    document.getElementById('closeBtn').onclick = function() {
+        discordWidgetContainer.style.opacity = '0';
+        setTimeout(function() {
+            discordWidgetContainer.style.display = 'none';
+        }, 500); // Ajustar el tiempo según sea necesario para una animación suave
+    };
+
+    // Agregar indicador de notificación al icono principal
+    var notificationIndicator = document.getElementById('notificationIndicator');
+    setInterval(function() {
+        notificationIndicator.style.display = notificationIndicator.style.display === 'none' ? 'block' : 'none';
+    }, 1000); // Intervalo de notificación
+
+    // Mover el widget al mantener presionado el header
+    document.getElementById('discordWidget').addEventListener('mousedown', function(e) {
+        isDragging = true;
+        offset.x = discordWidgetContainer.offsetLeft - e.clientX;
+        offset.y = discordWidgetContainer.offsetTop - e.clientY;
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+            discordWidgetContainer.style.left = (e.clientX + offset.x) + 'px';
+            discordWidgetContainer.style.top = (e.clientY + offset.y) + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', function() {
+        isDragging = false;
+    });
+
+    // Asegurar que el iframe cargue en español y muestre el canal específico
+    discordIframe.src = "https://discord.com/widget?id=957849032531796019&theme=dark&channel_id=957849033156722741&lang=es";
+</script>
+
+
+
+
+
+
+
+
         </ul>
     </div>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-    var crate = new Crate({
-      server: '957849032531796019',
-      channel: '957849033156722741'
-    })
-	
-	crate.toggle(false)
-	
-	// Display for 60 seconds + custom avatar
-	crate.notify({
-	  content: 'Nuevo Anuncio',
-	  timeout: 60000,
-      avatar: 'assets/images/deluxia_logo.png'
-	})
-	
-	// Listen for discord message events
-	crate.on('message', ({ message, channel }) => {
-		crate.notify('Nuevo Anuncio')
-		console.log(`New message in ${channel}`, message)
-	})   
-	
-</script>
-
 </script>
 <!-- desactivar clic -->
 <script>
