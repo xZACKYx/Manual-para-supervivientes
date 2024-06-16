@@ -1,14 +1,16 @@
 name: Handle Page Builds
 
 on:
-  page_build:
+  push:
+    branches:
+      - main
 
 jobs:
   handle_page_build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Page Build event details
-        if: github.event_name == 'page_build'
+      - name: Print Event Details
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           echo "Nueva actualización del Manual para supervivientes"
           echo "Enlace de la página: https://xzackyx.github.io/Manual-para-supervivientes/"
