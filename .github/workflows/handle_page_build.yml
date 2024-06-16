@@ -1,4 +1,4 @@
-name: Handle Page Builds
+name: Notify on Push
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  handle_page_build:
+  notify_on_push:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Event Details
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      - name: Notify about Push
+        if: github.event_name == 'push'
         run: |
           echo "Nueva actualización del Manual para supervivientes"
           echo "Enlace de la página: https://xzackyx.github.io/Manual-para-supervivientes/"
