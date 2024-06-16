@@ -1,16 +1,14 @@
 name: Handle Page Builds
 
 on:
-  push:
-    branches:
-      - main  # Cambiar por la rama principal de tu repositorio
   page_build:
+    types: [push]
 
 jobs:
   handle_page_build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Event Details
+      - name: Print Page Build event details
         if: github.event_name == 'page_build'
         run: |
           echo "Nueva actualización del Manual para supervivientes"
