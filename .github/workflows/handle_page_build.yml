@@ -9,8 +9,11 @@ jobs:
   notify_on_push:
     runs-on: ubuntu-latest
     steps:
-      - name: Notify about Push
+      - name: Send Discord Notification
         if: github.event_name == 'push'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          echo "Nueva actualización del Manual para supervivientes"
-          echo "Enlace de la página: https://xzackyx.github.io/Manual-para-supervivientes/"
+          curl -H "Content-Type: application/json" -X POST -d '{
+            "content": "Nueva actualización del Manual para supervivientes\nEnlace de la página: https://xzackyx.github.io/Manual-para-supervivientes/"
+          }' $DISCORD_WEBHOOK_URL
