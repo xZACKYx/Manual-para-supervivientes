@@ -2,7 +2,6 @@ name: Handle Page Builds
 
 on:
   page_build:
-    types: [push]
 
 jobs:
   handle_page_build:
