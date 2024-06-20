@@ -113,65 +113,142 @@ a:hover {
 	overflow: hidden
 }
 
-@media (max-width:991px) {
-	.bg-image-row,
-	.bg-map-row,
-	.bg-video-row {
-		position: relative
-	}
-	.bg-image-row>div,
-	.bg-map-row>div,
-	.bg-video-row>div {
-		padding-top: 56.25%
-	}
-	.bg-image-row>div>div,
-	.bg-map-row>div>div,
-	.bg-video-row>div>div {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0
-	}
+/* Media query para dispositivos con pantalla de hasta 480px (celulares en modo vertical) */
+@media (max-width: 480px) {
+    /* Ajustes para pantallas hasta 480px */
+    
+    /* Ejemplo de ajuste para imágenes de fondo o videos */
+    .bg-image-row > div,
+    .bg-map-row > div,
+    .bg-video-row > div {
+        padding-top: 100%; /* Ejemplo de ajuste para imagen de fondo o video */
+    }
+    
+    /* Ejemplo de ajuste para mapa en pantalla pequeña */
+    .bg-map-row .nk-gmaps {
+        height: 200px; 
+    }
 }
 
-.bg-map-row {
-	z-index: auto
+/* Media query para dispositivos con pantalla de hasta 768px (tablets y celulares en modo horizontal) */
+@media (max-width: 768px) {
+    /* Ajustes para pantallas hasta 768px */
+    
+    /* Ejemplo de ajuste para imágenes de fondo o videos */
+    .bg-image-row > div,
+    .bg-map-row > div,
+    .bg-video-row > div {
+        padding-top: 75%; /* Ejemplo de ajuste para imagen de fondo o video */
+    }
+    
+    /* Ejemplo de ajuste para mapa en pantalla mediana */
+    .bg-map-row .nk-gmaps {
+        height: 300px; 
+    }
 }
 
-.bg-map-row .nk-gmaps {
-	height: 100%;
-	z-index: 1
+/* Media query para dispositivos con pantalla de hasta 991px */
+@media (max-width: 991px) {
+    /* Ajustes para pantallas hasta 991px */
+    
+    /* Ejemplo de ajuste para imágenes de fondo o videos */
+    .bg-image-row,
+    .bg-map-row,
+    .bg-video-row {
+        position: relative;
+    }
+    
+    .bg-image-row > div,
+    .bg-map-row > div,
+    .bg-video-row > div {
+        padding-top: 56.25%; /* Ejemplo de ajuste para imagen de fondo o video */
+    }
+    
+    .bg-image-row > div > div,
+    .bg-map-row > div > div,
+    .bg-video-row > div > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .bg-map-row {
+        z-index: auto;
+    }
+    
+    .bg-map-row .nk-gmaps {
+        height: 100%;
+        z-index: 1;
+    }
+    
+    /* Ajustes específicos para bg-map-row en pantallas hasta 991px */
+    .bg-map-row {
+        position: relative;
+    }
+    
+    .bg-map-row > div {
+        padding-top: 0;
+    }
+    
+    .bg-map-row > div > div {
+        position: relative;
+    }
+    
+    .bg-map-row .nk-gmaps {
+        height: 300px; /* Altura por defecto para nk-gmaps */
+    }
+    
+    .bg-map-row .nk-gmaps-sm {
+        height: 250px; /* Altura específica para nk-gmaps-sm */
+    }
+    
+    .bg-map-row .nk-gmaps-md {
+        height: 450px; /* Altura específica para nk-gmaps-md */
+    }
+    
+    .bg-map-row .nk-gmaps-lg {
+        height: 550px; /* Altura específica para nk-gmaps-lg */
+    }
+    
+    .bg-map-row .nk-gmaps-full {
+        height: 700px; /* Altura específica para nk-gmaps-full */
+        height: 100vh; /* Fallback para asegurar altura total en viewport */
+        min-height: 700px; /* Altura mínima */
+    }
 }
 
-@media (max-width:991px) {
-	.bg-map-row {
-		position: relative
-	}
-	.bg-map-row>div {
-		padding-top: 0
-	}
-	.bg-map-row>div>div {
-		position: relative
-	}
-	.bg-map-row .nk-gmaps {
-		height: 300px
-	}
-	.bg-map-row .nk-gmaps-sm {
-		height: 250px
-	}
-	.bg-map-row .nk-gmaps-md {
-		height: 450px
-	}
-	.bg-map-row .nk-gmaps-lg {
-		height: 550px
-	}
-	.bg-map-row .nk-gmaps-full {
-		height: 700px;
-		height: 100vh;
-		min-height: 700px
-	}
+/* Media query para dispositivos con pantalla de hasta 1200px */
+@media (max-width: 1200px) {
+    /* Ajustes para pantallas hasta 1200px */
+    
+    /* Ejemplo de ajuste adicional */
+    .bg-image-row > div {
+        padding-top: 50%; /* Ejemplo de ajuste adicional para imágenes de fondo */
+    }
 }
+
+/* Media query para dispositivos con pantalla de hasta 1600px */
+@media (max-width: 1600px) {
+    /* Ajustes para pantallas hasta 1600px */
+    
+    /* Ejemplo de ajuste adicional */
+    .bg-image-row > div {
+        padding-top: 40%; /* Ejemplo de ajuste adicional para imágenes de fondo */
+    }
+}
+
+/* Media query para dispositivos con pantalla de hasta 1920px */
+@media (max-width: 1920px) {
+    /* Ajustes para pantallas hasta 1920px */
+    
+    /* Ejemplo de ajuste adicional */
+    .bg-image-row > div {
+        padding-top: 30%; /* Ejemplo de ajuste adicional para imágenes de fondo */
+    }
+}
+
 
 .nk-page-background {
 	position: fixed;
