@@ -10,7 +10,41 @@
     <title>[D-E-L-U-X-I-A] - Manual para supervivientes</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <!-- START: Styles -->
+    <!-- Styles -->
+    <style>
+        /* Estilos adicionales inline para mejorar la responsividad */
+        .nk-nav-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .nk-gap-4 {
+            margin-top: 4rem;
+        }
+        .nk-title {
+            margin-bottom: 0.5rem;
+        }
+        .nk-box {
+            padding: 2rem;
+        }
+        .nk-header-text {
+            text-align: center;
+        }
+        .nk-box-3 {
+            margin-bottom: 1rem;
+        }
+        .nk-footer-parallax {
+            padding: 2rem 0;
+        }
+        .nk-footer-logos .nk-logo-link {
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+        }
+ 
+        .nk-share-buttons li {
+            margin: 0.5rem;
+        }
+    </style>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
@@ -19,29 +53,23 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- FontAwesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
 
     <!-- IonIcons -->
-    <!-- <link rel="stylesheet" href="assets/css/ionicons.min.css"> -->
     <link href="https://unpkg.com/ionicons@7.1.0/dist/css/ionicons.min.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
-    <!-- GODLIKE -->
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- END: Styles -->
-
-
 </head>
 
 <body>
-    <div class="nk-page-background op-2" data-video="" data-video-loop="true" data-video-mute="true"
-        data-video-volume="0" data-video-start-time="0" data-video-end-time="0" data-video-pause-on-page-leave="true"
+    <div class="nk-page-background op-2"
         style="background-image: url('assets/images/background-2.png');"></div>
 
-
-    <!-- START: Page Border -->
+    <!-- Page Border -->
     <div class="nk-page-border">
         <div class="nk-page-border-t"></div>
         <div class="nk-page-border-r"></div>
@@ -49,57 +77,34 @@
         <div class="nk-page-border-l"></div>
     </div>
 
+    <!-- Navbar -->
     <nav class="nk-navbar nk-navbar-side nk-navbar-left nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
         id="nk-navbar-left">
         <div class="nano">
             <div class="nano-content">
                 <div class="nk-nav-table">
                     <div class="nk-nav-row">
-
                         <a href="./" class="nk-nav-logo" style="pointer-events: none;">
-    <img src="assets/images/logo.png" alt="" width="250">
-</a>
-
+                            <img src="assets/images/logo.png" alt="" width="250">
+                        </a>
                     </div>
                     <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
                         <ul class="nk-nav" data-nav-mobile="#nk-nav-mobile">
-                            <li class="active">
-                                <a href="#">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">Discord</a>
-                            </li>
-                            <li>
-                                <a href="wiki.html">Wiki</a>
-                            </li>
-                            <li>
-                                <a href="creditos.html">Créditos</a>
-                            </li>
-							<li>
-                              <a href="manual.html">Primeros pasos</a>
-                            </li>
-                            <li>
-                              <a href="donadores.html">Donadores</a>
-                            </li>
-                            <li>
-                                <a href="politicas.html">Políticas de Privacidad</a>
-                            </li>
-                            <li>
-                                <a href="reglas.html">Reglas</a>
-                            </li>
-			                <li>
-                                <a href="terminosdeservicio.html">Términos y condiciones</a>
-                            </li>
+                            <li><a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">Discord</a></li>
+                            <li><a href="wiki.html">Wiki</a></li>
+                            <li><a href="creditos.html">Créditos</a></li>
+                            <li><a href="manual.html">Primeros pasos</a></li>
+                            <li><a href="donadores.html">Donadores</a></li>
+                            <li><a href="politicas.html">Políticas de Privacidad</a></li>
+                            <li><a href="reglas.html">Reglas</a></li>
+                            <li><a href="terminosdeservicio.html">Términos y condiciones</a></li>
                         </ul>
                     </div>
-                    <!--
-                    END: Navigation
-                -->
                     <div class="nk-nav-row">
                         <div class="nk-nav-footer">
-                            &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
-    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
-    Contacto únicamente mediante Discord.
+                            &copy; <script>document.write(new Date().getFullYear())</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
+                            <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
+                            Contacto únicamente mediante Discord.
                         </div>
                     </div>
                 </div>
@@ -107,65 +112,61 @@
         </div>
     </nav>
     <!-- END: Navbar -->
-	
-    <!-- cookies -->
-<div class="cky-popup" id="cky-popup" style="display: none;">
-    <div class="cky-consent-bar" data-cky-tag="notice" style="border-color: #2a2a2a; background-color: #121212;">
-        <div class="cky-notice">
-            <p class="cky-title" role="heading" aria-level="1" data-cky-tag="title" style="color: #d0d0d0;">Valoramos tu privacidad</p>
-            <div class="cky-notice-group">
-                <div class="cky-notice-des" data-cky-tag="description" style="color: #d0d0d0;">
-                    <p>Nuestras cookies están determinadas por los servicios de GitHub para mejorar su experiencia en nuestro sitio, mostrarle anuncios o contenido personalizado y analizar nuestro tráfico. Al hacer clic en 'Aceptar', usted da su consentimiento a nuestro uso de las cookies.</p>
-                </div>
-                <div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons">
-                    <button class="cky-btn cky-btn-accept" aria-label="Aceptar todo" data-cky-tag="accept-button" style="color: #d0d0d0; border-color: #1863dc; background-color: #1863dc;" onclick="hidePopup()">Aceptar</button>
+
+    <!-- Cookies -->
+    <div class="cky-popup" id="cky-popup" style="display: none;">
+        <div class="cky-consent-bar" data-cky-tag="notice"
+            style="border-color: #2a2a2a; background-color: #121212;">
+            <div class="cky-notice">
+                <p class="cky-title" role="heading" aria-level="1"
+                    style="color: #d0d0d0;">Valoramos tu privacidad</p>
+                <div class="cky-notice-group">
+                    <div class="cky-notice-des" data-cky-tag="description"
+                        style="color: #d0d0d0;">
+                        <p>Nuestras cookies están determinadas por los servicios de GitHub para mejorar su experiencia en nuestro sitio, mostrarle anuncios o contenido personalizado y analizar nuestro tráfico. Al hacer clic en 'Aceptar', usted da su consentimiento a nuestro uso de las cookies.</p>
+                    </div>
+                    <div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons">
+                        <button class="cky-btn cky-btn-accept" aria-label="Aceptar todo"
+                            style="color: #d0d0d0; border-color: #1863dc; background-color: #1863dc;"
+                            onclick="hidePopup()">Aceptar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- END: cookies -->
 
-        <!-- END: cookies -->
-        <!-- START: Features -->
-        <div class="nk-box">
-            
-            <div class="nk-gap-4"></div>
-
-            <div class="nk-header-table-cell">
-                <div class="container">
-                    <div class="nk-header-text">
-<center>
-                        <h2 class="nk-title display-1">
-                            <span style="color:#00FF00">[D-E-L-U-X-I-A]<span> 
-                            <span style="color:red">Online<span>
-                        </h2>
-						
-                        <img src="assets/images/logo1.png" width="auto" height="300px">
+    <!-- Features -->
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="nk-header-text">
+                <center>
+                    <h2 class="nk-title display-1">
+                        <span style="color:#00FF00">[D-E-L-U-X-I-A]</span>
+                        <span style="color:red">Online</span>
+                    </h2>
+                    <img src="assets/images/logo1.png" width="auto" height="300px">
+                    <br><br>
+                    <a id="autoupdateDownload" href="#" class="nk-btn nk-btn-lg"
+                        style="font-size: 45px;">
+                        <ion-icon name="cloud-download"></ion-icon> Descargar Juego.
+                    </a>
+                    <h2 class="nk-title display-5">
                         <br>
+                        <span>[D-E-L-U-X-I-A] - Manual para supervivientes</span>
                         <br>
-                        <a id="autoupdateDownload" href="#" class="nk-btn nk-btn-lg" style="font-size: 45px;">
-                            <ion-icon name="cloud-download"></ion-icon> Descargar Juego.
-                        </a>
-
-                        <h2 class="nk-title display-5">
-							<br>
-                            <span>[D-E-L-U-X-I-A] - Manual para supervivientes<span> 
-							<br>
-                            <span style="color:goldenrod"><span>
-                        </h2>
-                        
-                        </br>
-                        </br>
-                        <span>
-                            Si el boton de descarga no funciona puedes bajar la ultima version del juego de Github: </br>
-                            <a href="https://github.com/xZACKYx/D-E-L-U-X-I-A/releases">https://github.com/xZACKYx/D-E-L-U-X-I-A/releases</a>
-                        </span>
-                        
-                        </br>
-                        </br>
-                        
-                        <h6>Requisitos:</h6>
-<span>
+                        <span style="color:goldenrod"></span>
+                    </h2>
+                    <br><br>
+                    <span>
+                        Si el botón de descarga no funciona puedes bajar la última versión del juego de Github:
+                        <br>
+                        <a href="https://github.com/xZACKYx/D-E-L-U-X-I-A/releases">https://github.com/xZACKYx/D-E-L-U-X-I-A/releases</a>
+                    </span>
+                    <br><br>
+                    <h6>Requisitos:</h6>
+                    <span>
     Tener Discord</br>
     <a href="https://discord.com">Descargar Discord</a></br>
 </span>
