@@ -113,29 +113,6 @@
     </nav>
     <!-- END: Navbar -->
 
-    <!-- Cookies -->
-    <div class="cky-popup" id="cky-popup" style="display: none;">
-        <div class="cky-consent-bar" data-cky-tag="notice"
-            style="border-color: #2a2a2a; background-color: #121212;">
-            <div class="cky-notice">
-                <p class="cky-title" role="heading" aria-level="1"
-                    style="color: #d0d0d0;">Valoramos tu privacidad</p>
-                <div class="cky-notice-group">
-                    <div class="cky-notice-des" data-cky-tag="description"
-                        style="color: #d0d0d0;">
-                        <p>Nuestras cookies están determinadas por los servicios de GitHub para mejorar su experiencia en nuestro sitio, mostrarle anuncios o contenido personalizado y analizar nuestro tráfico. Al hacer clic en 'Aceptar', usted da su consentimiento a nuestro uso de las cookies.</p>
-                    </div>
-                    <div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons">
-                        <button class="cky-btn cky-btn-accept" aria-label="Aceptar todo"
-                            style="color: #d0d0d0; border-color: #1863dc; background-color: #1863dc;"
-                            onclick="hidePopup()">Aceptar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END: cookies -->
-
     <!-- Features -->
     <div class="nk-box">
         <div class="nk-gap-4"></div>
@@ -525,81 +502,8 @@ Estos requisitos son fundamentales para una experiencia de juego fluida y satisf
     // Asegurar que el iframe cargue en español y muestre el canal específico
     discordIframe.src = "https://discord.com/widget?id=957849032531796019&theme=dark&channel_id=957849033156722741&lang=es";
 </script>
-
-
-
-
-
-
-
-
-        </ul>
+ </ul>
     </div>
-	<script>
-    // Función para establecer una cookie
-    function setCookie(name, value, days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    }
-
-    // Función para obtener el valor de una cookie
-    function getCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-    // Función para verificar si se ha aceptado la cookie
-    function checkCookie() {
-        var cookieAccepted = getCookie("cookieAccepted");
-        if (cookieAccepted) {
-            // Si la cookie ha sido aceptada, ocultar el pop-up
-            hidePopup();
-        }
-    }
-
-    // Función para mostrar el pop-up
-    function showPopup() {
-        document.getElementById("cky-popup").style.display = "block";
-    }
-
-    // Función para ocultar el pop-up y establecer la cookie
-    function hidePopup() {
-        document.getElementById("cky-popup").style.display = "none";
-        setCookie("cookieAccepted", "true", 365); // La cookie expira en 1 año
-    }
-
-    // Verificar la cookie cuando se cargue la página
-    window.onload = function () {
-        checkCookie();
-    };
-</script>
-
-	<script>
-    // Función para mostrar el pop-up
-    function showPopup() {
-        document.getElementById("cky-popup").style.display = "block";
-    }
-
-    // Función para ocultar el pop-up
-    function hidePopup() {
-        document.getElementById("cky-popup").style.display = "none";
-    }
-
-    // Llamada a la función para mostrar el pop-up
-    showPopup();
-</script>
-
 </body>
 
 <!-- desactivar clic -->
