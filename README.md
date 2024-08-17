@@ -15,9 +15,6 @@
 
 
 
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=xZACKYx.xZACKYx&"  />
-</div>
 
 ###
 
@@ -64,15 +61,15 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo" />
   <img width="12" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HeidiSQL_Logo.png" height="40" alt="heidisql logo" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/HeidiSQL_logo_image.png" height="40" alt="heidisql logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg" height="40" alt="tomcat logo" />
   <img width="12" />
-  <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-fivem-is-a-grand-theft-auto-v-multiplayer-modification-framework-logo-color-tal-revivo.png" height="40" alt="fivem logo" />
+  <img src="https://logos-world.net/wp-content/uploads/2021/03/FiveM-Emblem.png" height="40" alt="fivem logo" />
   <img width="12" />
-  <img src="https://pbs.twimg.com/profile_images/1394605300849020930/2aJ4C7fg_400x400.jpg" height="40" alt="qbcore logo" />
+  <img src="https://brycerussell.github.io/qbcore-docs/_astro/qbcore-logo.8ab457b2_Z19VH3o.webp" height="40" alt="qbcore logo" />
   <img width="12" />
-  <img src="https://raw.githubusercontent.com/ESX-Org/es_extended/master/ui/assets/logo.png" height="40" alt="esx logo" />
+  <img src="https://avatars.githubusercontent.com/u/33867380?s=200&v=4" height="40" alt="esx logo" />
 </div>
 
 
