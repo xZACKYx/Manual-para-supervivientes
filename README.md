@@ -22,7 +22,7 @@
 
 ###
 
-<h3 align="left"># ☣️☢️ Manual para Supervivientes de [D-E-L-U-X-I-A] ☢️☣️</h3>
+<h3 align="left">☣️☢️ Manual para Supervivientes de [D-E-L-U-X-I-A] ☢️☣️</h3>
 
 
 
@@ -75,8 +75,10 @@
 
 ###
 
-<h3 align="left">👑   Mi repositorio con mods, scripts y más.  👑:</h3>
-<a href="https://https://github.com/xZACKYx" target="_blank">[GuxFiz]/esx_loadingscreen</a>
+<a href="https://github.com/xZACKYx" target="_blank">
+  <h3 align="left">👑 Mi repositorio con mods, scripts y más. 👑</h3>
+</a>
+
 
 ###
 # Rodrigo Zacky
