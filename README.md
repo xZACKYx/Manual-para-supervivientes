@@ -2,45 +2,39 @@
   <img height="150" src="https://r2.fivemanage.com/xtCiQR5YQV9Lt4hZC39sX/BANNER_LOGO.jpg" />
 </div>
 
-### 
+##
 
 <div align="center">
-  <a href="https://discord.gg/phAkPfbSrQ" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-blue?style=for-the-badge&logo=discord&logoColor=white&labelColor=5865F2&color=5865F2" height="25" alt="Discord logo" />
-  </a>
-  <a href="https://www.youtube.com/@RodrigoZacky" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&labelColor=red&color=red" height="25" alt="Youtube logo"  />
-  </a>
-  <a href="https://zacky-portafolio.rf.gd" target="_blank">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=alienware&logoColor=white&labelColor=black&color=black" height="25" alt="Portafolio logo"  />
-  </a>
+  <img src="https://img.shields.io/badge/Discord-blue?style=for-the-badge&logo=discord&logoColor=white&labelColor=5865F2&color=5865F2" height="25" alt="Discord logo" />
+  <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&labelColor=red&color=red&link=https%3A%2F%2Fwww.youtube.com%2F%40RodrigoZacky"  height="25" alt="Youtube logo"  />
+  <img alt="Static Badge" src="https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=alienware&logoColor=white&labelColor=black&color=black&link=https://zacky-portafolio.rf.gd" height="25" alt="Portafolio logo"  />
+  
 </div>
 
-
-###
-
+##
 
 
 
-###
+
+##
 
 <h1 align="center">💎 Un Apasionado Desarrollador Méxicano 💎</h1>
 
-###
+##
 
 <h3 align="center">☣️☢️ Manual para Supervivientes de [D-E-L-U-X-I-A] ☢️☣️</h3>
 
 
 
-###
+##
 
 <p align="center">Novedades: <br>- 🔭 Revisa los commits </p>
 
-###
+##
 
 <h3 align="center">🛠 Lenguaje y Herramientas qué uso 🛠</h3>
 
-###
+##
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" height="40" alt="lua logo" />
@@ -79,8 +73,9 @@
 </div>
 
 
-###
+##
 <h3 align="center"><a href="https://github.com/xZACKYx?tab=repositories" target="_blank">👑   Mi repositorio con mods, scripts y más.  👑</a></h3>
 
-###
+##
 # ©️ Rodrigo Zacky
+##
