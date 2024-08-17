@@ -74,7 +74,7 @@
 
 
 ###
-<h3 align="center"><a href="https://https://github.com/xZACKYx" target="_blank">👑   Mi repositorio con mods, scripts y más.  👑</a></h3>
+<h3 align="center"><a href="https://github.com/xZACKYx?tab=repositories" target="_blank">👑   Mi repositorio con mods, scripts y más.  👑</a></h3>
 
 ###
 # ©️ Rodrigo Zacky
