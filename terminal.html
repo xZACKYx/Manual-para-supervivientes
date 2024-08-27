@@ -213,8 +213,8 @@
     </div>
     </div>
 
-    <!-- Scripts -->
-    <script>
+<!-- Scripts -->
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     const inputElement = document.getElementById('command-input');
     const outputElement = document.querySelector('#console-window > output');
@@ -230,14 +230,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         informe: () => `[D-E-L-U-X-I-A] fue fundada en 2043 en medio del caos global causado por la pandemia del Virus N-Z. Su misión es salvar lo que queda de la humanidad a través de la ciencia y la fuerza militar.\n\nEn 2045, [D-E-L-U-X-I-A] se estableció como la última esperanza de la humanidad, con su sede en una isla secreta ahora conocida como [D-E-L-U-X-I-A]. La organización se centró en asegurar puntos estratégicos alrededor de Los Santos y recuperar recursos vitales.\n\nDurante el período de 2046 a 2055, [D-E-L-U-X-I-A] amplió su influencia, estableciendo una red de enclaves seguros a lo largo del estado de San Andreas. Desarrolló el Protocolo Neón, mejorando las capacidades de sus Supervivientes con mejoras cibernéticas y biológicas.\n\nEn 2056, la organización lanzó la Operación Leviatán para retomar Cayo Perico y descubrir la fuente de las nuevas mutaciones del Virus N-Z. En 2063, descubrieron la Fuente Primaria, el origen de las mutaciones, y aunque lograron neutralizarla en 2065, la organización quedó severamente debilitada.\n\nDesde 2066, Cayo Perico fue abandonada debido a la falta de personal. La búsqueda de una cura definitiva continúa con el Protocolo Épsilon, y aunque se ha ganado una batalla, la guerra contra el Virus N-Z sigue en curso.`,
         salir: () => window.close(),
-		RPMI: () => `🔍 Has descubierto un secreto oculto! [D-E-L-U-X-I-A] tiene una unidad de investigacion secreta conocida como 'Operacion Fenix', cuyo objetivo es explorar nuevas dimensiones para encontrar recursos raros que podrian ser la clave para una cura definitiva.`,
+        RPMI: () => `🔍 Has descubierto un secreto oculto! [D-E-L-U-X-I-A] tiene una unidad de investigacion secreta conocida como 'Operacion Fenix', cuyo objetivo es explorar nuevas dimensiones para encontrar recursos raros que podrian ser la clave para una cura definitiva.`,
         FBRO: () => `🔍 Interesante hallazgo! Los registros indican que un antiguo lider de [D-E-L-U-X-I-A], el General Armitage, desaparecio misteriosamente en 2048. Se rumorea que podria estar en una instalacion oculta bajo las Montanas de San Andreas.`,
         LSVA: () => `🔬 Analisis en curso... Se ha encontrado una anomalía en los datos de mutacion del Virus N-Z. Algunos sujetos muestran signos de evolucion hacia formas inteligentes que podrian cambiar el equilibrio de poder en el campo de batalla.`,
         VFOC: () => `📝 Mensaje encriptado recibido: 'La clave para resolver el enigma esta en las ruinas del viejo laboratorio. Busca el artefacto escondido en las profundidades.`,
         HODM: () => `📜 Historial de eventos: En 2054, una mision encubierta de [D-E-L-U-X-I-A] descubrio una red secreta de sobrevivientes que habian desarrollado una variante del Virus N-Z que podria ser la base para una cura.`,
         DFQR: () => `📍 Ubicacion confidencial: Se ha identificado una instalacion subterránea en el desierto de San Andreas que podria contener tecnologia avanzada perdida durante el colapso global.`,
         GYMO: () => `🔍 Investigando... Los datos sugieren que hay una conexion entre los experimentos de Humane Labs y una red de tuneles secretos que se extienden por debajo de Los Santos, posiblemente relacionadas con el Virus N-Z.`,
-        FNVZ:    () => `🚨 Alerta de seguridad: Se ha detectado una actividad inusual en el oceano, creemos qué es La base de los Marea Roja usando el portaaviones USS Luxington, el radar muestra que se puede encontrar en la esquina más al sureste pasando el aeropuerto internacional de Los Santos y entre Cayo Perico.`,
+        FNVZ: () => `🚨 Alerta de seguridad: Se ha detectado una actividad inusual en el oceano, creemos qué es La base de los Marea Roja usando el portaaviones USS Luxington, el radar muestra que se puede encontrar en la esquina más al sureste pasando el aeropuerto internacional de Los Santos y entre Cayo Perico.`,
         GJOR: () => `🔑 Codigo desbloqueado: 'HDHL'. Este codigo proporciona acceso a archivos de investigacion clasificados sobre el desarrollo del Virus N-Z y su impacto en el ecosistema local.`,
         HDHL: () => `🔎 Descubrimiento reciente: Un antiguo laboratorio de Humane Labs ha sido encontrado intacto bajo Cayo Perico. Los equipos de [D-E-L-U-X-I-A] estan en proceso de examinar los equipos y registros dejados atras, se cree qué fue la causa de las nuevas mutaciones del N-Z.`,
         fecha: () => new Date().toLocaleString(),
@@ -253,19 +253,45 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    function escapeHTML(str) {
+        var div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
     function executeCommand(command) {
         const [cmd, ...args] = command.trim().split(/\s+/);
+        let result;
         if (commands[cmd]) {
-            const result = commands[cmd](args.join(' '));
+            result = commands[cmd](args.join(' '));
             if (result !== undefined) {
-                outputElement.innerHTML += `<div class="line">${result}</div>`;
+                const lineElement = document.createElement('div');
+                lineElement.className = 'line';
+                lineElement.innerHTML = escapeHTML(result); // Escapa el resultado antes de insertarlo
+                outputElement.appendChild(lineElement);
             }
         } else {
-            outputElement.innerHTML += `<div class="line">Comando no reconocido: ${cmd}</div>`;
+            const errorLine = document.createElement('div');
+            errorLine.className = 'line';
+            errorLine.textContent = `Comando no reconocido: ${cmd}`; // Usa textContent para un mensaje de error
+            outputElement.appendChild(errorLine);
         }
         outputElement.scrollTop = outputElement.scrollHeight;
         playSound('terminal-success');
     }
+
+    inputElement.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const command = inputElement.value;
+            const commandLine = document.createElement('div');
+            commandLine.className = 'line';
+            commandLine.textContent = command; // Usa textContent para mostrar el comando ingresado
+            outputElement.appendChild(commandLine);
+            executeCommand(command);
+            inputElement.value = '';
+            event.preventDefault();
+        }
+    });
 
     function playSound(id) {
         const audio = document.getElementById(id);
@@ -286,16 +312,6 @@ document.addEventListener('DOMContentLoaded', function() {
         inputElement.focus();
     }
 
-    inputElement.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            const command = inputElement.value;
-            outputElement.innerHTML += `<div class="line">${command}</div>`;
-            executeCommand(command);
-            inputElement.value = '';
-            event.preventDefault();
-        }
-    });
-
     // Enfoca el campo de entrada cuando el usuario haga clic en cualquier parte de la ventana
     document.addEventListener('click', function(event) {
         if (event.target !== inputElement) {
@@ -306,5 +322,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicialmente enfoca el campo de entrada
     focusInput();
 });
-
-    </script>
+</script>
