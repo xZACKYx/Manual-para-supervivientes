@@ -1,444 +1,555 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
     <meta name="author" content="Rodrigo_Zacky">
     <title>[D-E-L-U-X-I-A] - GM's</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <!-- START: Styles -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/principal.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700%7cMarcellus+SC" rel="stylesheet">
+    <!-- Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="La organización [D-E-L-U-X-I-A], con el objetivo de salvar a la humanidad, hará lo que sea necesario para proteger a los sobrevivientes que quedan.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="[D-E-L-U-X-I-A] - Manual para supervivientes">
+    <meta property="og:description" content="La organización [D-E-L-U-X-I-A], con el objetivo de salvar a la humanidad, hará lo que sea necesario para proteger a los sobrevivientes que quedan.">
+    <meta property="og:image" content="https://xzackyx.github.io/Manual-para-supervivientes//share.png">
+    <meta property="og:url" content="https://xzackyx.github.io/Manual-para-supervivientes/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[D-E-L-U-X-I-A] - Manual para supervivientes">
+    <meta name="twitter:description" content="La organización [D-E-L-U-X-I-A], con el objetivo de salvar a la humanidad, hará lo que sea necesario para proteger a los sobrevivientes que quedan.">
+    <meta name="twitter:image" content="https://xzackyx.github.io/Manual-para-supervivientes//share.png">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!-- FontAwesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
-
-    <!-- IonIcons -->
-    <!-- <link rel="stylesheet" href="assets/css/ionicons.min.css"> -->
-    <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
-    <!-- GODLIKE -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- END: Styles -->
-
-
+    <!-- Tu script JS para zombies.js -->
+    <script type="module" src="assets/js/zombies2.js"></script>
 </head>
 <style>
-	b {
+/* Estilos para <b> */
+b {
     font-weight: bold;
     text-decoration: none;
-    
-    font-size: 1.2em; /* Este valor aumentará el tamaño del texto */
-}
-img {
-  display: block; /* Asegura que la imagen sea tratada como un bloque */
-  margin-left: auto; /* Centra horizontalmente la imagen */
-  margin-right: auto; /* Centra horizontalmente la imagen */
-}
-p, li {
-  color: white; /* Establece el color del texto en blanco */
-  
+    color: #00ff00;
+    font-size: 1.4em;
+    /* Tamaño del texto para <b> */
 }
 
+/* Estilos para <strong> */
+strong {
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+    font-size: 1.4em;
+    /* Tamaño del texto para <strong> */
+}
+
+/* Estilos para párrafos <p> */
+p {
+    font-size: 1.2em;
+    color: white;
+    /* Tamaño y color de texto para párrafos */
+}
+
+/* Estilos para listas no ordenadas <ul> */
+ul {
+    padding-left: 1em;
+    /* Agrega espacio a la izquierda de la lista */
+}
+
+/* Estilos para elementos de lista <li> dentro de <ul> */
+ul li {
+    font-size: 1.2em;
+    list-style-type: disc;
+    color: white;
+    /* Tamaño, color de texto y estilo de lista para elementos de lista */
+}
+
+/* Estilos para <b> dentro de <li> */
+ul li b {
+    color: #00ff00;
+    font-size: 1.1em;
+    /* Color de texto para <b> dentro de <li> */
+}
+
+/* Estilos para enlaces <a> */
+a {
+    color: violet;
+    /* Color de los enlaces */
+}
+
+/* Estilos para el marcador (bolita) de la lista */
+ul li::marker {
+    color: #00ff00;
+    /* Color de la bolita verde brillante */
+}
+
+table {
+    border-collapse: separate;
+    /* Asegura que las celdas se separen, no se fusionen */
+    border-spacing: 10px;
+    /* Ajusta el espacio entre las celdas */
+}
 </style>
-<body>
-    <div class="nk-page-background op-2" data-video="" data-video-loop="true" data-video-mute="true"
-        data-video-volume="0" data-video-start-time="0" data-video-end-time="0" data-video-pause-on-page-leave="true"
-        style="background-image: url('assets/images/background-2.png');"></div>
 
+<body class="bg-zinc-900 font-sans pattern select-none">
+    <div id="__nuxt">
+        <div class="flex flex-col xl:flex-row min-h-screen bg-zinc-900 max-w-14xl border-r border-zinc-700">
+            <!--[-->
+            <div class="nuxt-loading-indicator" style="position:fixed;top:0;right:0;left:0;pointer-events:none;width:auto;height:3px;opacity:0;background:#dc2626;background-size:Infinity% auto;transform:scaleX(0%);transform-origin:left;transition:transform 0.1s, height 0.4s, opacity 0.4s;z-index:999999;"></div>
+            <div class="m-6 mb-0 md:m-12 md:mb-0 xl:mb-12 xl:mr-0 flex-1 max-w-7xl">
+                <div class="divide-y divide-zinc-700 overflow-hidden rounded-lg bg-zinc-700 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 border border-zinc-700">
+                    <!--[-->
+                    <!--[-->
+                    <nav class="col-span-2 bg-zinc-900 uppercase" aria-label="Breadcrumb">
+                        <ol role="list" class="flex w-full justify-between">
+                            <li class="flex pattern px-6 py-1 mx-6 md:mx-12 my-4 rounded-lg">
+                                <div class="flex items-center"><span class="text-white" aria-current="page">GM's o staff en DISCORD</span></div>
+                            </li>
+                            <li class="flex border-r border-zinc-900 rounded-b-lg">
+                                <div class="flex items-center"><a onclick="window.close();" class="hover:text-red-500 px-6 md:px-12 py-6 text-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-white rounded-tr-lg" id="back"><svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 448 512">
+                                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>
+                                        </svg><span class="sr-only"> Home </span><audio data-id="back-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="back-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-hover.ogg" type="audio/ogg"></audio><audio data-id="back-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="back-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/back-release.ogg" type="audio/ogg"></audio></a></div>
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="group bg-zinc-900 p-6 md:p-12 col-span-2">
+                        <div><span class="rounded-lg flex text-white overflow-hidden">
+                                <!--[-->
+                                <div class="bg-[black]/50 pattern w-full">
+                                    <div class="px-6 py-6 sm:px-6 sm:py-12 lg:px-8">
+                                        <div class="mx-auto max-w-2xl text-left"><span class="font-serif text-gold text-4x1">
+                                                <!--[-->
+                                                <center>
+                                                    <strong><span style="color: gold; font-size: 1.7em;">GM's o staff en DISCORD</span></strong>
+                                                </center><br>
+                                                <!--]-->
+                                            </span>
+                                            <div><span class="text-zinc-400 uppercase">
+                                                    <!--[-->
+                                                    <br>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p align="center">
+                                                        <font size="3"><b><a href="#Colores">Servidor<br>
+                                                                    <br>
+                                                                </a></b></font>
+                                                        <font size="3"><b><a href="#Comparativa de comandos permitidos del Sistema de Privilegios escalares Vs el Sistema de Administracion">GM's o staff en DISCORD.</a></b><b><a href="#Colores"><br>
+                                                                    <br>
+                                                                    <a href="#Abuso de la Administración">Abuso de la Administración.<br>
+                                                                        <br>
+                                                                    </a><a href="#Los Ayudantes">Los Ayudantes</a></b></font>
+                                                    </p>
+                                                    <br>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p align="left"><b>
+                                                            <font size="5"><strong><a name="Colores">Servidor FM</a></strong></font>
+                                                        </b></p>
+                                                    <table>
+                                                        <tr>
+                                                            <td width="112" height="26">
+                                                                <font size="3"><b>
+                                                                        <font color="ff0000">𝐅𝐔𝐍𝐃𝐀𝐃𝐎𝐑</font>
+                                                                    </b></font>
+                                                            </td>
+                                                            <td width="362" height="26">
+                                                                <p size="3">【👑】 𝐂𝐫𝐞𝐚𝐝𝐨𝐫 𝐲 𝐆𝐌</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="112" height="26">
+                                                                <font size="3"><b>
+                                                                        <font color="00EE00">𝗠𝗢𝗗𝗘𝗥𝗔𝗗𝗢𝗥</font>
+                                                                    </b></font>
+                                                            </td>
+                                                            <td width="362" height="26">
+                                                                <p size="3">【🚓】 - 𝐌𝐃</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="112" height="26">
+                                                                <font size="3"><b>
+                                                                        <font color="#00FFFF">𝗦𝗧𝗔𝗙𝗙</font>
+                                                                    </b></font>
+                                                            </td>
+                                                            <td width="362" height="26">
+                                                                <p size="3">【🚓】 - 𝗦𝗧𝗔𝗙𝗙</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p align="left"><b>
+                                                            <font size="5"><strong><a name="Comparativa de comandos permitidos del Sistema de Privilegios escalares Vs el Sistema de Administracion">GM's o staff en DISCORD</a></strong></font>
+                                                        </b></p>
+                                                    <table>
+                                                        <tr>
+                                                            <td width="auto" height="26">
+                                                                <font color="#82b4ff" size="4"><b>1 - 【👨‍🔧】</b></font>
+                                                            </td>
+                                                            <td width="400" height="26">
+                                                                <p size="2">𝐀𝐘𝐔𝐃𝐀𝐍𝐓𝐄 - 𝐀𝐩𝐫𝐞𝐧𝐝𝐢𝐳 𝐝𝐞 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="auto" height="25">
+                                                                <font color="#8a2b2b" size="4"><b>2 - 【🚓】</b></font>
+                                                            </td>
+                                                            <td width="400" height="25">
+                                                                <p size="3">𝗦𝗧𝗔𝗙𝗙 - 𝗦𝗧𝗔𝗙𝗙</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="auto" height="25">
+                                                                <font color="#8a2b2b" size="4"><b>2 - 【🛡️】</b></font>
+                                                            </td>
+                                                            <td width="400" height="25">
+                                                                <p size="3">𝐀𝐃𝐌𝐈𝐍𝐈𝐒𝐓𝐑𝐀𝐃𝐎𝐑 - 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="auto" height="21">
+                                                                <font color="red" size="4"><b>3 - 【👑】</b></font>
+                                                            </td>
+                                                            <td width="400" height="21">
+                                                                <p size="3">𝐅𝐔𝐍𝐃𝐀𝐃𝐎𝐑 - 𝐂𝐫𝐞𝐚𝐝𝐨𝐫 𝐲 𝐆𝐌</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
 
-    <!-- START: Page Border -->
-    <div class="nk-page-border">
-        <div class="nk-page-border-t"></div>
-        <div class="nk-page-border-r"></div>
-        <div class="nk-page-border-b"></div>
-        <div class="nk-page-border-l"></div>
-    </div>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p align="left">
+                                                        <font size="5"><strong><a name="Abuso de la Administración">Abuso de la Administración</a></strong></font>
+                                                        <font size="5"><strong><a name="Abuso de la Administración">Abuso de la Administración</a></strong></font>
+                                                    </p>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p align="left">
+                                                        <font size="4">Toda persona está sujeta a las <a href="reglas.html" style="color: red;">reglas</a>. Si presencias a un GM cometiendo abuso, reúne pruebas y repórtalo en Discord.
+                                                            Todos los GMs abusivos serán despojados de sus rangos y el castigo dependerá de la gravedad de la infracción.<br></font>
+                                                    </p>
 
-    <nav class="nk-navbar nk-navbar-side nk-navbar-left nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content"
-        id="nk-navbar-left">
-        <div class="nano">
-            <div class="nano-content">
-                <div class="nk-nav-table">
-                    <div class="nk-nav-row">
+                                                    <table border="0" width="100%" bgcolor="#212020">
+                                                        <tr>
+                                                            <td width="100%">
+                                                                <font size="4">
+                                                                    <center>
+                                                                        <h2 style="color: red;">Recomendaciones para reunir pruebas</h2>
+                                                                    </center>
+                                                                    <ul>
+                                                                        <li><strong>Capturas de pantalla:</strong> Toma capturas de pantalla de la conversación en la que ocurrió el abuso. Asegúrate de capturar tanto el comportamiento inapropiado del GM como cualquier interacción previa que pueda contextualizar la situación.</li>
+                                                                        <br>
+                                                                        <li><strong>Grabaciones de audio o video:</strong> Si es posible, graba la conversación donde se produjo el abuso. Esto proporcionará evidencia más sólida y completa de lo que sucedió.</li>
+                                                                        <br>
+                                                                        <li><strong>Testigos:</strong> Si otros usuarios estaban presentes durante el incidente, pídeles que den testimonio o proporcionen declaraciones escritas sobre lo que presenciaron. Los testimonios de testigos pueden fortalecer tu caso.</li>
+                                                                        <br>
+                                                                        <li><strong>Registro de actividad:</strong> Si el juego tiene un registro de actividad que muestra las acciones realizadas por los GMs, asegúrate de revisarlo para encontrar cualquier evidencia adicional del comportamiento abusivo.</li>
+                                                                        <br>
+                                                                        <li><strong>Registro de chat:</strong> El juego guarda un registro de chat, asegúrate de revisarlo para encontrar cualquier conversación relevante que pueda respaldar tu denuncia.</li>
+                                                                        <br>
+                                                                    </ul>
+                                                                </font>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p align="left">
+                                                        <font size="5"><strong><a name="Los Ayudantes">Los Ayudantes</a></strong></font>
+                                                    </p>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <table>
+                                                        <tr>
+                                                            <td width="100%">
+                                                                <p><strong>NOTA SOBRE LOS AYUDANTES:</strong><br>
+                                                                    Los Ayudantes son usuarios normales que, de manera voluntaria y sin obligación (siempre y cuando ganen la postulación), pueden ayudar a otros jugadores cuando lo deseen. Este rol permite a personas comunes asistir a la comunidad mientras juegan. Además, los Ayudantes serán evaluados como una fase de prueba antes de considerar su posible inclusión en el Staff o como Moderadores. Es importante destacar que ser Ayudante no garantiza automáticamente una promoción; la decisión final se tomará en función de la evaluación comunitaria y del personal autorizado, con la última palabra siendo del Fundador.
+                                                                </p>
+                                                                <br>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>Un Ayudante no puede ejecutar comandos de administración, lo que garantiza que su rol sea seguro.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Ser Ayudante no implica automáticamente que se será Administrador, Staff o Moderador.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>La mayoría de los Ayudantes son usuarios normales que obtienen su título por ayudar a otros. (Siempre y cuando ganen la postulación}</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Se llevará a cabo una votación comunitaria para elegir al mejor Ayudante. El ganador tendrá la oportunidad de unirse al Staff oficial, siempre y cuando cumpla con los requisitos establecidos.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Se podrá asignar o quitar Ayudantes en cualquier momento; el motivo será comunicado directamente al usuario vía Discord.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Para ser Ayudante, se debe ganar en postulaciones en Discord.</p>
+                                                                    </li>
+                                                                </ul>
 
-                        <a href="./" class="nk-nav-logo" style="pointer-events: none;">
-    <img src="assets/images/logo.png" alt="" width="250">
-</a>
+                                                                </ul>
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <br><br><br><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span></div>
 
-                    </div>
-                    <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
-                        <ul class="nk-nav" data-nav-mobile="#nk-nav-mobile">
-                            
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">Discord</a>
-                            </li>
-                            <li>
-							<li class="active">
-                                <a href="wiki.html">Wiki</a>
-                            </li>
-                            <li>
-							
-                                <a href="creditos.html">Créditos</a>
-                            </li>
-                            <li>
-							
-                              <a href="manual.html">Primeros pasos</a>
-                            </li>
-							                            <li>
-                              <a href="donadores.html">Donadores</a>
-                            </li>
-                            <li>
-							
-                                <a href="politicas.html">Políticas de Privacidad</a>
-                            </li>
-                            <li>
-							
-                                <a href="reglas.html">Reglas</a>
-                            </li>
-			                <li>
-							
-                                <a href="terminosdeservicio.html">Términos y condiciones</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--
-                    END: Navigation
-                -->
-                    <div class="nk-nav-row">
-                        <div class="nk-nav-footer">
-                            &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
-    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
-    Contacto únicamente mediante Discord.
-                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div></span>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <!-- END: Navbar -->
+    </div>
+    </div>
+    </main>
 
-    <div class="nk-main">
-
-        <!-- START: Features -->
-        <div class="nk-box">
-            
-            <div class="nk-gap-4"></div>
-
-            <div class="nk-header-table-cell">
-                <div class="container">
-                    <div class="nk-header-text">
-
-    <p align="center">
-        <img src="assets/images/logo1.png" alt="Logo" width="auto" height="auto">
-        <font size=4 color="navajowhite"><b>[D-E-L-U-X-I-A] - GM's</b><BR>
-<hr color="#00FF00">
-<p align="center"><font size="3" ><b><a href="wiki.html">Volver
-atras</a></b></font></p>
-<br>
-<hr color="#00FF00">
-<p align="center"><font size="3" ><b><a href="#Colores">Colores<br>
-<br>
-</a></b></font><font  size="3"><b><a href="#Comparativa de comandos permitidos del Sistema de Privilegios escalares Vs el Sistema de Administracion">GM's o staff en DISCORD.</a></b><b><a href="#Colores"><br>
-<br>
-<a href="#Abuso de la Administración.">Abuso de la Administración.<br>
-<br>
-</a><a href="#Los Ayudantes">Los Ayudantes</a></b></font></p>
-<br>
-<hr color="#00FF00">
-<p align="left"><b><font  size="5"><a name="Colores">Colores</a></font></b></p>
-<table>
-  <tr>
-    <td width="112" height="26"><font  size="3"><b><font color="00EE00">Verde</font></b></font></td>
-    <td width="362" height="26"><font  size="3">Administrador.</font></td>
-  </tr>
-  <tr>
-    <td width="112" height="26"><font  size="3"><b><font color="#00FFFF">Celeste</font></b></font></td>
-    <td width="362" height="26"><font  size="3">Moderador.</font></td>
-  </tr>
-</table>
-<hr color="#00FF00">
-<p align="left"><b><font  size="5"><a name="Comparativa de comandos permitidos del Sistema de Privilegios escalares Vs el Sistema de Administracion">GM's o staff en DISCORD.</a></font></b></p>
-<style>
-  table {
-    border-collapse: separate; /* Asegura que las celdas se separen, no se fusionen */
-    border-spacing: 10px; /* Ajusta el espacio entre las celdas */
-  }
-</style>
-
-<table>
-  <tr>
-    <td width="auto" height="26"><font color="#82b4ff" size="4"><b>1 - Moderador|Staff </b></font></td>
-    <td width="400" height="26"><font size="2">Administrador/Aprendiz de Administrador</font></td>
-  </tr>
-  <tr>
-    <td width="auto" height="25"><font color="#8a2b2b" size="4"><b>2 - Administrador </b></font></td>
-    <td width="400" height="25"><font size="3">Administrador/Aprendiz de Administrador</font></td>
-  </tr>
-  <tr>
-    <td width="auto" height="21"><font color="red" size="4"><b>3 - Fundador </b></font></td>
-    <td width="400" height="21"><font size="3">Administrador|Creador</font></td>
-  </tr>
-</table>
-
-
-<hr color="#00FF00">
-<p align="left"><font  size="5"><b><a name="Abuso de la Administración.">Abuso de la Administración.</a></b></font></p>
-<hr color="#008000">
-<p align="left"><font size="4" ><p>Toda persona está sujeta a las <a href="reglas.html" style="color: red;">reglas</a>,  si presencias a un GM cometiendo abuso, reúne pruebas y repórtalo en Discord. 
-Todos los GMs abusivos serán despojados de sus rangos y el castigo dependerá de la gravedad de la infracción.<br>
-</font></p>
-<p align="left"></p>
-<table border="0" width="100%" bgcolor="#212020">
-  <tr>
-    <td width="100%"><font size="2" ><b><br>
-      </b><br>
-      </font><font size="4" ><br>
-<center><h2 style="color: red;">Recomendaciones para reunir pruebas</h2></center>
-
-<ul>
-  <li><strong>Capturas de pantalla:</strong> Toma capturas de pantalla de la conversación en la que ocurrió el abuso. Asegúrate de capturar tanto el comportamiento inapropiado del GM como cualquier interacción previa que pueda contextualizar la situación.</li>
-  <br>
-  <li><strong>Grabaciones de audio o video:</strong> Si es posible, graba la conversación donde se produjo el abuso. Esto proporcionará evidencia más sólida y completa de lo que sucedió.</li>
-  <br>
-  <li><strong>Testigos:</strong> Si otros usuarios estaban presentes durante el incidente, pídeles que den testimonio o proporcionen declaraciones escritas sobre lo que presenciaron. Los testimonios de testigos pueden fortalecer tu caso.</li>
-  <br>
-  <li><strong>Registro de actividad:</strong> Si el juego tiene un registro de actividad que muestra las acciones realizadas por los GMs, asegúrate de revisarlo para encontrar cualquier evidencia adicional del comportamiento abusivo.</li>
-  <br> 
-  <li><strong>Registro de chat:</strong> El juego guarda un registro de chat, asegúrate de revisarlo para encontrar cualquier conversación relevante que pueda respaldar tu denuncia.</li>
-  <br>
-</ul></font></td>
-  </tr>
-</table>
-<hr color="#00FF00">
-<p align="left"><font  size="5"><b><a name="Los Ayudantes">Los Ayudantes</a></b></font></p>
-<hr color="#008000">
-<table>
-  <tr>
-    <td width="100%"><font size="4">NOTA
-      ACERCA DE LOS AYUDANTES: Para que siven los Ayudantes se preguntaran,
-      el objetivo de este nuevo ROL, es que es un usuario normal, que este jugando y sin
-      obligacion cuando quiera podra ir a ayudar a otros usuarios que necesiten
-      ayuda. La idea principal del ROL, es para los GM's o usuario normal que no tienen ganas
-      de ser GM todo el tiempo, tener una forma de responder consultas y jugar
-      al mismo tiempo, sin que ni siquiera nadie tenga que saber quien es en
-      realidad (en el caso que sea un GM).&nbsp;<br>
-      (Puede ser el HOST u otros, incluso se puede utilizar como un modo de
-      prueba antes de hacer o no al usuario Staff|Moderador)</font></td> </b>  <b>
-
-  </tr>
-  <tr>
-   <ul>
-    <td width="100%"><b><font  size="5" color="red">ACLARACIONES:
-  <li><font  size="3" color="#00FF00">Un Ayudante no puede hacer ningún comando de administración, lo que lo hace muy seguro.</font></li>
-  <li><font  size="3" color="#00FF00">No por ser [Ayudante] significa que serás administrador, staff o moderador.</font></li>
-  <li><font  size="3" color="#00FF00">La mayoría de los [Ayudantes] son usuarios normales que obtienen su título por ayudar a otros.</font></li>
-  <li><font  size="3" color="#00FF00">Un personaje, Moderador, Administrador o Aprendiz de Administrador, no pueden ser Ayudantes, porque no funcionará.</font></li>
-  <li><font  size="3" color="#00FF00">Se podrá asignar o quitar Ayudantes en cualquier momento, el motivo será enviado directamente al usuario vía Discord.</font></li>
- <li><font  size="3" color="#00FF00">Para ser ayudante se tiene que ganar en postulaciones en Discord.</font></li>
-</ul>
-<br></font></td>
-  </tr>
-</table>
-        <div id="footer">
-  <div class="footCont">
-    <div style="float:left;width:680px;">
-      <div style="float:left;width:350px;text-align:justify;padding-right:25px;">
-        <div style="float:left;">
-
-		  </div>
-          </div>
+    <!-- Footer -->
+    <div class="flex flex-col xl:flex-row min-h-screen bg-zinc-900 max-w-14xl border-r border-zinc-700">
+        <!--[-->
+        <div class="nuxt-loading-indicator" style="position:fixed;top:0;right:0;left:0;pointer-events:none;width:auto;height:3px;opacity:0;background:#84cc16;background-size:Infinity% auto;transform:scaleX(0%);transform-origin:left;transition:transform 0.1s, height 0.4s, opacity 0.4s;z-index:999999;"></div>
+        <div id="frame" class="w-full h-full absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 pointer-events-none z-0">
+            <div style="position: fixed; inset: 0; display: flex; align-items: center; justify-content: right; z-index: 50; top: 30%; transform: translateY(-50%);">
+                <img src="assets/images/Logosinfondo.png" alt="Logo" style="max-width: 70%; max-height: 70%; opacity: 0.2;">
             </div>
-            <div style="float:left;width:300px;text-align:center;">
-              
+        </div>
+        <div class="flex flex-col flex-1 relative z-10">
+            <header aria-labelledby="header-heading" class="flex flex-col flex-1">
+                <b id="header-heading" class="sr-only"> Header </b>
+                <div class="flex-1 px-0 py-6 m-12 md:m-24">
+                    <img src="assets/images/logo.svg" alt="Logo" class="h-16 w-auto max-w-full sticky top-24 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 520 301">
+                </div>
+            </header>
+            <div class="px-12 py-6 md:px-24 md:py-12 border-t border-zinc-700 bg-zinc-900">
+                <nav class="grid grid-cols-2 md:grid-cols-4 gap-y-12 uppercase">
+                    <div class="space-y-12">
+                        <div><span class="text-zinc-400 uppercase">
+                                <!--[--> Historia y lore
+                                <!--]--></span>
+                            <ul role="list" class="mt-6 space-y-3">
+                                <li><a href="Historia.html" rel="noopener noreferrer" id="about-database" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full">
+                                        <!--[--> Historia
+                                        <!--]--><svg class="fill-current h-3 w-3 ml-2" viewbox="0 0 384 512">
+                                            <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"></path>
+                                        </svg><audio data-id="about-database-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="about-database-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="about-database-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="about-database-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <li><a href="CLASIFICADO.html" rel="noopener noreferrer" id="about-colophon" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full">
+                                        <!--[--> CLASIFICADO
+                                        <!--]--><svg class="fill-current h-3 w-3 ml-2" viewbox="0 0 384 512">
+                                            <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"></path>
+                                        </svg><audio data-id="about-colophon-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="about-colophon-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="about-colophon-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="about-colophon-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <li><a href="Facciones.html" rel="noopener noreferrer" id="about-colophon" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full">
+                                        <!--[--> Facciones
+                                        <!--]--><svg class="fill-current h-3 w-3 ml-2" viewbox="0 0 384 512">
+                                            <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"></path>
+                                        </svg><audio data-id="about-colophon-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="about-colophon-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="about-colophon-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="about-colophon-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <div><span class="text-zinc-400 uppercase">
+                                <!--[--> Lore adicional
+                                <!--]--></span>
+                            <ul role="list" class="mt-6 space-y-3">
+                                <li><a href="Documentos.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full" id="media-screenshots">
+                                        <!--[--> Documentos clasificados de los bunker
+                                        <!--]-->
+                                        <!----><audio data-id="media-screenshots-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="media-screenshots-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="media-screenshots-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="media-screenshots-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <li><a href="NPC+.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full" id="media-videos">
+                                        <!--[--> Personajes históricos
+                                        <!--]-->
+                                        <!----><audio data-id="media-videos-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="media-videos-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="media-videos-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="media-videos-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <li><a href="artefactos.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full" id="media-videos">
+                                        <!--[--> Artefactos
+                                        <!--]-->
+                                        <!----><audio data-id="media-videos-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="media-videos-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="media-videos-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="media-videos-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <div><span class="text-zinc-400 uppercase">
+                                <!--[--> AYUDAS
+                                <!--]--></span>
+                            <ul role="list" class="mt-6 space-y-3">
+                                <li><a href="argot.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full" id="server-information">
+                                        <!--[--> Vocabulario y argot
+                                        <!--]-->
+                                        <!----><audio data-id="server-information-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="server-information-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="server-information-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="server-information-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <li><a href="Principiantes.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full" id="server-mission">
+                                        <!--[--> Primeros pasos
+                                        <!--]-->
+                                        <!----><audio data-id="server-mission-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="server-mission-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="server-mission-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="server-mission-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <li><a href="comandos.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full" id="server-mission">
+                                        <!--[--> Comandos
+                                        <!--]-->
+                                        <!----><audio data-id="server-mission-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="server-mission-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="server-mission-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="server-mission-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <div><span class="text-zinc-400 uppercase">
+                                <!--[--> Otro
+                                <!--]--></span>
+                            <ul role="list" class="mt-6 space-y-3">
+                                <li><a href="gms.html" rel="noopener noreferrer" id="extras-kofi" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full">
+                                        <!--[--> Lista oficial de Staff | GM's | Admins
+                                        <!--]--><svg class="fill-current h-3 w-3 ml-2" viewbox="0 0 384 512">
+                                            <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"></path>
+                                        </svg><audio data-id="extras-kofi-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="extras-kofi-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="extras-kofi-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="extras-kofi-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                <br>
+                                <li><a onclick="window.close();" rel="noopener noreferrer" id="footer-facebook" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-green text-white rounded-full pointer-events-auto"><span class="sr-only">Cerrar</span>
+                                        <!-- Facebook Icon -->
+                                        <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+                                        </svg>
+                                        <audio data-id="footer-facebook-focus" class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio>
+                                        <audio data-id="footer-facebook-hover" class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio>
+                                        <audio data-id="footer-facebook-click" class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio>
+                                        <audio data-id="footer-facebook-release" class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <footer aria-labelledby="footer-heading" class="flex flex-col flex-1">
+                    <b id="footer-heading" class="sr-only"> Footer </b>
+                    <div class="flex md:items-center justify-between mt-6 pt-6 md:mt-12 md:pt-12 border-t border-zinc-700">
+                        <div class="flex items-center space-x-2"><a href="https://xzackyx.github.io/Manual-para-supervivientes/" rel="noopener noreferrer" target="_blank" id="footer-setetres" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">[D-E-L-U-X-I-A]</span>
+                                <!--[--><img src="assets/images/Logosinfondo.png" class="h-1/2 opacity-20 fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-0 lg:pointer-events-none" alt="[D-E-L-U-X-I-A]" />
+                                <!--]--><audio data-id="footer-setetres-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-setetres-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-setetres-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-setetres-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><span class="hidden sm:inline text-xs text-zinc-400 uppercase">&copy; <script>
+                                document.write(new Date().getFullYear())
+                                </script> Administrador - [D-E-L-U-X-I-A] - Rodrigo_Zacky - <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a></span></div>
+                        <div class="flex items-center justify-start sm:justify-end space-x-2"><a href="https://steamcommunity.com/profiles/76561198063559364/" rel="noopener noreferrer" target="_blank" id="footer-steam" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">Steam</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 448 512">
+                                    <path d="M395.5 177.5c0 33.8-27.5 61-61 61-33.8 0-61-27.3-61-61s27.3-61 61-61c33.5 0 61 27.2 61 61zm52.5.2c0 63-51 113.8-113.7 113.8L225 371.3c-4 43-40.5 76.8-84.5 76.8-40.5 0-74.7-28.8-83-67L0 358V250.7L97.2 290c15.1-9.2 32.2-13.3 52-11.5l71-101.7c.5-62.3 51.5-112.8 114-112.8C397 64 448 115 448 177.7zM203 363c0-34.7-27.8-62.5-62.5-62.5-4.5 0-9 .5-13.5 1.5l26 10.5c25.5 10.2 38 39 27.7 64.5-10.2 25.5-39.2 38-64.7 27.5-10.2-4-20.5-8.3-30.7-12.2 10.5 19.7 31.2 33.2 55.2 33.2 34.7 0 62.5-27.8 62.5-62.5zm207.5-185.3c0-42-34.3-76.2-76.2-76.2-42.3 0-76.5 34.2-76.5 76.2 0 42.2 34.3 76.2 76.5 76.2 41.9.1 76.2-33.9 76.2-76.2z"></path>
+                                </svg>
+                                <!--]--><audio data-id="footer-steam-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-steam-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-steam-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-steam-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><a href="https://discord.com/invite/phAkPfbSrQ" rel="noopener noreferrer" target="_blank" id="footer-discord" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">Discord</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 640 512">
+                                    <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                                </svg>
+                                <!--]--><audio data-id="footer-discord-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-discord-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-discord-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-discord-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><a href="https://github.com/xZACKYx" rel="noopener noreferrer" target="_blank" id="footer-github" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">Github</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 496 512">
+                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                                </svg>
+                                <!--]--><audio data-id="footer-github-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-github-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-github-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-github-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><a href="https://www.paypal.com/paypalme/deluxiapay" rel="noopener noreferrer" target="_blank" id="footer-kofi" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">Paypal</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 640 512">
+                                    <path d="M424.81 148.79c-.43 2.76-.93 5.58-1.49 8.48-19.17 98-84.76 131.8-168.54 131.8h-42.65a20.67 20.67 0 00-20.47 17.46l-21.84 137.84-6.18 39.07a10.86 10.86 0 009.07 12.42 10.72 10.72 0 001.7.13h75.65a18.18 18.18 0 0018-15.27l.74-3.83 14.24-90 .91-4.94a18.16 18.16 0 0118-15.3h11.31c73.3 0 130.67-29.62 147.44-115.32 7-35.8 3.38-65.69-15.16-86.72a72.27 72.27 0 00-20.73-15.82z" />
+                                    <path d="M385.52 51.09C363.84 26.52 324.71 16 274.63 16H129.25a20.75 20.75 0 00-20.54 17.48l-60.55 382a12.43 12.43 0 0010.39 14.22 12.58 12.58 0 001.94.15h89.76l22.54-142.29-.7 4.46a20.67 20.67 0 0120.47-17.46h42.65c83.77 0 149.36-33.86 168.54-131.8.57-2.9 1.05-5.72 1.49-8.48 5.7-36.22-.05-60.87-19.72-83.19z" />
+                                </svg>
+                                <!--]--><audio data-id="footer-kofi-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-kofi-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-kofi-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-kofi-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><a href="https://www.patreon.com/DELUXIA" rel="noopener noreferrer" target="_blank" id="footer-twitch" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">Patreon</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                    <path d="M489.7 153.8c-.1-65.4-51-119-110.7-138.3C304.8-8.5 207-5 136.1 28.4C50.3 68.9 23.3 157.7 22.3 246.2C21.5 319 28.7 510.6 136.9 512c80.3 1 92.3-102.5 129.5-152.3c26.4-35.5 60.5-45.5 102.4-55.9c72-17.8 121.1-74.7 121-150z" />
+                                </svg>
+                                <!--]--><audio data-id="footer-twitch-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-twitch-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-twitch-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-twitch-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><a href="https://rodrigo-zacky.itch.io" rel="noopener noreferrer" target="_blank" id="footer-x" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">Itch.io</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                    <path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z" />
+                                </svg>
+                                <!--]--><audio data-id="footer-x-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-x-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-x-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-x-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a><a href="https://www.youtube.com/@RodrigoZacky" rel="noopener noreferrer" target="_blank" id="footer-youtube" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full"><span class="sr-only">YouTube</span>
+                                <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                                <!--]--><audio data-id="footer-youtube-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-youtube-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-youtube-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-youtube-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></div>
+                    </div>
+                </footer>
             </div>
-            <div style="clear:both;"></div>
-          </div>
         </div>
-        <div style="height:5px;width:100%;background-color:#4D4D4D;"></div>
-        <div style="text-align:center;color:#00FF00;font-size:12px;padding:10px;">
-    &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Administrador, [D-E-L-U-X-I-A] y Rodrigo_Zacky. Todos los derechos reservados.
-    <a href="https://discord.com/invite/phAkPfbSrQ" style="color:red;" target="_blank">ZACKY</a>
-    Contacto únicamente mediante Discord.
-</div>
-      </div>
+        <!--]-->
     </div>
-  </body>
-
-    <!--
-    START: Share Buttons
-        .nk-share-buttons-left
--->
-    <div class="nk-share-buttons d-none d-md-flex">
-        <ul>
-           <li>
-    <a href="https://discord.com/invite/phAkPfbSrQ" target="_blank">
-        <span class="nk-share-icon" title="Chatea con nosotros en discord" data-share="discord">
-            <i class="fab fa-discord"></i>
-        </span>
-        <span class="nk-share-name">Discord</span>
-    </a>
-</li>
-
-            <li>
-    <a href="https://www.patreon.com/DELUXIA" target="_blank">
-        <span class="nk-share-icon" title="Patreon" data-share="patreon">
-            <i class="fab fa-patreon"></i>
-        </span>
-        <span class="nk-share-name">Patreon</span>
-    </a>
-</li>
-
-            <li>
-                <a href="https://github.com/xZACKYx/D-E-L-U-X-I-A/releases" target="_blank">
-                    <span class="nk-share-icon" title="Git" data-share="github">
-                        <span class="icon fa fa-github"></span>
-                    </span>
-                    <span class="nk-share-name">Github</span>
-                </a>
-            </li>
-            <li>
-                <a href="assets/manual/index.html" target="_blank">
-                    <span class="nk-share-icon" title="Manual del Juego" data-share="wikipedia">
-                        <span class="icon fa fa-book"></span>
-                    </span>
-                    <span class="nk-share-name">Manual para supervivientes</span>
-                </a>
-            </li>
-<li>
-    <a href="https://rodrigo-zacky.itch.io" target="_blank">
-        <span class="nk-share-icon" title="itch-io" data-share="itch-io">
-            <i class="fab fa-itch-io"></i>
-        </span>
-        <span class="nk-share-name">itch-io</span>
-    </a>
-</li>
-
-
-
-
-            <li>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=E9ZTR5X6BBUG2" target="_blank">
-                    <span class="nk-share-icon" title="Paypal" data-share="Paypal">
-                        <span class="fab fa-paypal"></span>
-                    </span>
-                    <span class="nk-share-name">Paypal</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/channel/UCKSc7Bb_QK_zU1oUsQyQ5Hw" target="_blank">
-                    <span class="nk-share-icon" title="Youtube" data-share="Youtube">
-                        <span class="fa fa-youtube"></span>
-                    </span>
-                    <span class="nk-share-name">Youtube</span>
-                </a>
-            </li>
-			<br>
-			<br>
-<div id="discordIcon" style="width: 50px; height: 50px; position: fixed; bottom: 20px; right: 20px;">
-    <div id="iconMain" style="width: 100%; height: 100%; background: url('https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png') no-repeat center center; background-size: contain; border-radius: 50%; position: relative;">
-        <span id="notificationIndicator" style="position: absolute; top: -5px; right: -5px; width: 10px; height: 10px; background-color: red; border-radius: 50%; display: none;"></span>
     </div>
-</div>
-
-<div id="discordWidgetContainer" style="display: none; position: fixed; width: 400px; height: 600px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); overflow: hidden; border-radius: 8px;">
-    <div id="discordWidget" style="width: 100%; height: 100%; overflow: hidden; background-color: #36393f;">
-        <div style="display: flex; justify-content: space-between; align-items: center; background-color: #7289da; color: #fff; padding: 10px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-            <div style="font-size: 20px; font-weight: bold; text-align: center; width: 100%;">[D-E-L-U-X-I-A]</div>
-            <button id="closeBtn" style="position: relative; cursor: pointer; color: white; background-color: #7289da; padding: 5px; border: none; border-radius: 3px;">
-                X
-            </button>
-        </div>
-        <iframe id="discordIframe" src="https://discord.com/widget?id=957849032531796019&theme=dark&channel_id=957849033156722741&lang=es" width="400" height="550" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
-</div>
-
-<script>
-    var discordWidgetContainer = document.getElementById('discordWidgetContainer');
-    var discordIframe = document.getElementById('discordIframe');
-    var isDragging = false;
-    var offset = { x: 0, y: 0 };
-
-    // Mostrar y ocultar el widget al hacer clic en el icono y el botón de cierre
-    document.getElementById('discordIcon').onclick = function() {
-        if (discordWidgetContainer.style.display === 'block') {
-            discordWidgetContainer.style.opacity = '0';
-            setTimeout(function() {
-                discordWidgetContainer.style.display = 'none';
-            }, 500); // Ajustar el tiempo según sea necesario para una animación suave
-        } else {
-            discordWidgetContainer.style.display = 'block';
-            setTimeout(function() {
-                discordWidgetContainer.style.opacity = '1';
-            }, 50); // Ajustar el tiempo según sea necesario para una animación suave
-        }
-    };
-
-    document.getElementById('closeBtn').onclick = function() {
-        discordWidgetContainer.style.opacity = '0';
-        setTimeout(function() {
-            discordWidgetContainer.style.display = 'none';
-        }, 500); // Ajustar el tiempo según sea necesario para una animación suave
-    };
-
-    // Agregar indicador de notificación al icono principal
-    var notificationIndicator = document.getElementById('notificationIndicator');
-    setInterval(function() {
-        notificationIndicator.style.display = notificationIndicator.style.display === 'none' ? 'block' : 'none';
-    }, 1000); // Intervalo de notificación
-
-    // Mover el widget al mantener presionado el header
-    document.getElementById('discordWidget').addEventListener('mousedown', function(e) {
-        isDragging = true;
-        offset.x = discordWidgetContainer.offsetLeft - e.clientX;
-        offset.y = discordWidgetContainer.offsetTop - e.clientY;
-    });
-
-    document.addEventListener('mousemove', function(e) {
-        if (isDragging) {
-            discordWidgetContainer.style.left = (e.clientX + offset.x) + 'px';
-            discordWidgetContainer.style.top = (e.clientY + offset.y) + 'px';
-        }
-    });
-
-    document.addEventListener('mouseup', function() {
-        isDragging = false;
-    });
-
-    // Asegurar que el iframe cargue en español y muestre el canal específico
-    discordIframe.src = "https://discord.com/widget?id=957849032531796019&theme=dark&channel_id=957849033156722741&lang=es";
-</script>
-
-
-
-
-
-
-
-
-        </ul>
-    </div>
+    <div id="teleports"></div>
 </body>
-</script>
-<!-- desactivar clic -->
-<script>
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-</script>
-
 
 </html>

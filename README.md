@@ -18,7 +18,53 @@
 
 ##
 
+# Licencia de Uso para [Manual para supervivientes]
 
+## Creative Commons Atribución 4.0 Internacional (CC BY 4.0)
+
+**Licenciante:** Rodrigo Beristain  
+**Licenciatario:** Cualquier persona que utilice, copie, modifique o distribuya los materiales bajo los términos de esta licencia.
+
+### Concesión de Licencia
+Se concede al Licenciatario una licencia mundial, no exclusiva, sin royalties y perpetua para usar, copiar, modificar y distribuir los materiales especificados en este repositorio bajo los términos de esta licencia.
+
+### Derechos Permitidos
+- **Compartir:** Copiar y redistribuir el material en cualquier medio o formato para cualquier propósito, incluso comercialmente.
+- **Adaptar:** Remezclar, transformar y construir a partir del material para cualquier propósito, incluso comercialmente.
+
+### Condiciones
+- **Atribución:** Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del Licenciante.
+- **No hay restricciones adicionales:** No puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otros a hacer cualquier uso permitido por la licencia.
+
+### Propiedad Intelectual y Marcas
+- **Marcas y Logos:** Las marcas [D-E-L-U-X-I-A], así como cualquier logo y material de autoría exclusivo de Rodrigo Beristain Romo de Vivar, son propiedad intelectual y exclusiva de Rodrigo Beristain Romo de Vivar y sus alias mencionados en los términos y condiciones. Este derecho es irrompible y se mantiene independientemente de cualquier alias o nombre utilizado.
+- **Respeto a la Propiedad Intelectual:** Cualquier uso de materiales relacionados con estas marcas, logos, textos, y demás propiedad intelectual de Rodrigo Beristain Romo de Vivar debe respetar los términos y condiciones establecidos en la página web asociada con este repositorio. Los derechos de propiedad intelectual de Rodrigo Beristain Romo de Vivar deben ser respetados en todos los casos.
+- **Materiales de Libre Uso:** Materiales adicionales, como logos de terceros o materiales bajo licencias como MIT, pueden ser utilizados siempre y cuando no infrinjan los derechos de propiedad intelectual de Rodrigo Beristain Romo de Vivar y se mantenga el respeto hacia sus creaciones.
+
+### Avisos
+- No tiene que cumplir con la licencia para elementos del material en el dominio público o cuando su uso esté permitido por una excepción o limitación aplicable.
+- La licencia podría no darle todos los permisos que necesita para el uso que tenga previsto. Por ejemplo, otros derechos como publicidad, privacidad, o derechos morales pueden limitar la forma en que utilice el material.
+
+### Renuncia de Garantías
+Los materiales se proporcionan "tal cual" sin garantía de ningún tipo, expresa o implícita, incluyendo, pero no limitado a, las garantías de comerciabilidad, idoneidad para un propósito particular y no infracción.
+
+### Limitación de Responsabilidad
+Ni el Licenciante ni los contribuyentes serán responsables de ningún daño directo, indirecto, incidental, especial, ejemplar o consecuencial (incluyendo, pero no limitado a, la adquisición de bienes o servicios sustitutos, la pérdida de uso, datos o beneficios, o interrupción de negocio) sin importar la causa y bajo cualquier teoría de responsabilidad, ya sea en contrato, responsabilidad estricta o agravio (incluyendo negligencia o de otra manera) que surja en cualquier manera del uso de los materiales, incluso si se advierte de la posibilidad de tales daños.
+
+### Terminación
+Esta licencia se termina automáticamente si el Licenciatario incumple cualquiera de los términos y condiciones establecidos. Al término de la licencia, el Licenciatario debe dejar de usar, copiar, modificar y distribuir los materiales.
+
+### Jurisdicción y Ley Aplicable
+Esta licencia se regirá e interpretará de acuerdo con las leyes del [país o estado] sin tener en cuenta sus principios de conflictos de leyes.
+
+## Aceptación de los Términos
+El uso de los materiales especificados en este repositorio constituye la aceptación de estos términos y condiciones. Si no está de acuerdo con estos términos, no utilice, copie, modifique ni distribuya los materiales.
+
+---
+
+Puede encontrar más información sobre la licencia y revisar el texto legal completo en la [página oficial de Creative Commons](https://creativecommons.org/licenses/by/4.0/deed.es).
+
+Para los términos y condiciones completos del servicio, visite: [Términos de Servicio](https://xzackyx.github.io/Manual-para-supervivientes/terminosdeservicio.html)
 
 
 ##
@@ -33,7 +79,7 @@
 
 ##
 
-<p align="center">Novedades: <br>- 🔭 Revisa los commits </p>
+<p align="center">Novedades: <br>- 🔭 Revisa los commits o entra a Discord </p>
 
 ##
 

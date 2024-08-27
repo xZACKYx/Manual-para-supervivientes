@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rodrigo_Zacky">
+    <title>[D-E-L-U-X-I-A] - Donadores - Patrocinadores</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/principal.css">
+
+    <!-- Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="La organización [D-E-L-U-X-I-A], con el objetivo de salvar a la humanidad, hará lo que sea necesario para proteger a los sobrevivientes que quedan.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="[D-E-L-U-X-I-A] - Manual para supervivientes">
+    <meta property="og:description" content="La organización [D-E-L-U-X-I-A], con el objetivo de salvar a la humanidad, hará lo que sea necesario para proteger a los sobrevivientes que quedan.">
+    <meta property="og:image" content="https://xzackyx.github.io/Manual-para-supervivientes//share.png">
+    <meta property="og:url" content="https://xzackyx.github.io/Manual-para-supervivientes/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[D-E-L-U-X-I-A] - Manual para supervivientes">
+    <meta name="twitter:description" content="La organización [D-E-L-U-X-I-A], con el objetivo de salvar a la humanidad, hará lo que sea necesario para proteger a los sobrevivientes que quedan.">
+    <meta name="twitter:image" content="https://xzackyx.github.io/Manual-para-supervivientes//share.png">
+
+    <!-- Tu script JS para zombies.js -->
+    <script type="module" src="assets/js/zombies2.js"></script>
+</head>
+<style>
+/* Estilos para <b> */
+b {
+    font-weight: bold;
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 1.1em;
+    /* Tamaño del texto para <b> */
+}
+
+/* Estilos para <strong> */
+strong {
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+    font-size: 1.4em;
+    /* Tamaño del texto para <strong> */
+}
+
+/* Estilos para párrafos <p> */
+p {
+    font-size: 1.2em;
+    color: white;
+    /* Tamaño y color de texto para párrafos */
+}
+
+/* Estilos para listas no ordenadas <ul> */
+ul {
+    padding-left: 1em;
+    /* Agrega espacio a la izquierda de la lista */
+}
+
+/* Estilos para elementos de lista <li> dentro de <ul> */
+ul li {
+    font-size: 1.2em;
+    list-style-type: disc;
+    color: white;
+    /* Tamaño, color de texto y estilo de lista para elementos de lista */
+}
+
+/* Estilos para <b> dentro de <li> */
+ul li b {
+    color: #00ff00;
+    font-size: 1.1em;
+    /* Color de texto para <b> dentro de <li> */
+}
+
+/* Estilos para enlaces <a> */
+a {
+    color: violet;
+    /* Color de los enlaces */
+}
+
+/* Estilos para el marcador (bolita) de la lista */
+ul li::marker {
+    color: #00ff00;
+    /* Color de la bolita verde brillante */
+}
+
+.p-description {
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.donation-list li {
+    margin-bottom: 10px;
+}
+
+.description-box {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navajowhite-text {
+    color: navajowhite;
+    font-weight: bold;
+}
+
+.golden-text {
+    color: gold;
+    font-weight: bold;
+}
+</style>
+
+<body class="bg-zinc-900 font-sans pattern select-none">
+    <div id="__nuxt">
+        <div class="flex flex-col xl:flex-row min-h-screen bg-zinc-900 max-w-14xl border-r border-zinc-700">
+            <!--[-->
+            <div class="nuxt-loading-indicator" style="position:fixed;top:0;right:0;left:0;pointer-events:none;width:auto;height:3px;opacity:0;background:#dc2626;background-size:Infinity% auto;transform:scaleX(0%);transform-origin:left;transition:transform 0.1s, height 0.4s, opacity 0.4s;z-index:999999;"></div>
+            <div class="m-6 mb-0 md:m-12 md:mb-0 xl:mb-12 xl:mr-0 flex-1 max-w-7xl">
+                <div class="divide-y divide-zinc-700 overflow-hidden rounded-lg bg-zinc-700 sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 border border-zinc-700">
+                    <!--[-->
+                    <!--[-->
+                    <nav class="col-span-2 bg-zinc-900 uppercase" aria-label="Breadcrumb">
+                        <ol role="list" class="flex w-full justify-between">
+                            <li class="flex pattern px-6 py-1 mx-6 md:mx-12 my-4 rounded-lg">
+                                <div class="flex items-center"><span class="text-white" aria-current="page">>[D-E-L-U-X-I-A] - Donadores - Patrocinadores</span></div>
+                            </li>
+                            <li class="flex border-r border-zinc-900 rounded-b-lg">
+                                <div class="flex items-center"><a onclick="window.close();" class="hover:text-red-500 px-6 md:px-12 py-6 text-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-white rounded-tr-lg" id="back"><svg class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 448 512">
+                                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>
+                                        </svg><span class="sr-only"> Home </span><audio data-id="back-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="back-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-hover.ogg" type="audio/ogg"></audio><audio data-id="back-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="back-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/back-release.ogg" type="audio/ogg"></audio></a></div>
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="group bg-zinc-900 p-6 md:p-12 col-span-2">
+                        <div><span class="rounded-lg flex text-white overflow-hidden">
+                                <!--[-->
+                                <div class="bg-[black]/50 pattern w-full">
+                                    <div class="px-6 py-6 sm:px-6 sm:py-12 lg:px-8">
+                                        <div class="mx-auto max-w-2xl text-left"><span class="font-serif text-gold text-4x1">
+                                                <!--[-->
+                                                <center>
+                                                    <strong><span style="color: gold; font-size: 1.4em;">[D-E-L-U-X-I-A] - Donadores - Patrocinadores</span></strong>
+                                                </center><br>
+                                                <!--]-->
+                                            </span>
+                                            <div><span class="text-zinc-400 uppercase">
+                                                    <!--[-->
+                                                    <center><strong><span style="color: cyan; font-size: 1.9em;">¿Cómo donar?</span></strong></center>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p>
+                                                        El servidor se mantiene con el esfuerzo de ZACKY, los GMs y las donaciones de los usuarios. ¡Ayúdanos a mantenerlo con tu donación!
+                                                    </p>
+                                                    <p>
+
+
+                                                    </p>
+                                                    <p> Los objetos de donadores son permanentes, cada rango agrega estadísticas permanentes y aumenta según el nivel de donación, si solo quieres apoyar puedes usar alguna de las siguientes opciones.
+                                                    </p>
+                                                    <br>
+                                                    <p>
+                                                    <ul class="donation-list">
+                                                        <li>
+                                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U4XMSUFYJBACE&currency_code=MXN" target="_blank" class="button-game" style="max-width:1603px;">
+                                                                <span class="button-game-bg-left"></span>
+                                                                <span style="font-size:18px !important;">
+                                                                    <span> Donar $500 </span>
+                                                                </span>
+                                                                <span class="button-game-bg-right"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JLWKCVL45AF6N&currency_code=MXN" <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JLWKCVL45AF6N&currency_code=MXN" target="_blank" class="button-game" style="max-width:1603px;">
+                                                                <span class="button-game-bg-left"></span>
+                                                                <span style="font-size:18px !important;">
+                                                                    <span> Donar $750 </span>
+                                                                </span>
+                                                                <span class="button-game-bg-right"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8DTYY2N57N38&currency_code=MXN" target="_blank" style="max-width:1603px;">
+                                                                <span class="button-game-bg-left"></span>
+                                                                <span style="font-size:18px !important;">
+                                                                    <span> Donar $1000 </span>
+                                                                </span>
+                                                                <span class="button-game-bg-right"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5CXCAWFBMVVYY&currency_code=MXN" target="_blank" style="max-width:1603px;">
+                                                                <span class="button-game-bg-left"></span>
+                                                                <span style="font-size:18px !important;">
+                                                                    <span> Donar $1250 </span>
+                                                                </span>
+                                                                <span class="button-game-bg-right"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVUQPUFSJT7AC&currency_code=MXN" target="_blank" style="max-width:1603px;">
+                                                                <span class="button-game-bg-left"></span>
+                                                                <span style="font-size:18px !important;">
+                                                                    <span> Donar $2000 </span>
+                                                                </span>
+                                                                <span class="button-game-bg-right"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LCUVDFSEAX66E&currency_code=MXN" target="_blank" style="max-width:1603px;">
+                                                                <span class="button-game-bg-left"></span>
+                                                                <span style="font-size:18px !important;">
+                                                                    <span> Donar $10.000 </span>
+                                                                </span>
+                                                                <span class="button-game-bg-right"></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <br>
+
+                                                    </p>
+                                                    <p>
+                                                        Si quieres recibir una recompensa por tu donación, por favor ve al canal de Discord siguiente: <b><a href="https://discord.com/channels/957849032531796019/1178042526398156810" target="_blank">Donaciones de Discord</a></b><br>(El soporte puede demorar un poco más), indicando el personaje. Este proceso no suele tardar más de 24hs.
+                                                    </p>
+                                                    <p> Las Luminas NO son transferibles. </p>
+                                                    <p> Es importante aclarar qué la donación voluntaria y la donación por recompensa son completamente diferentes. </p>
+                                                    <center><strong><span style="color: cyan; font-size: 1.9em;">TOP DONADORES</span></strong></center>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p>
+                                                        Este sistema es para los usuarios que quieren ayudar al servidor con sus donaciones. Hay 5 categorías de donación y para conseguirlas lo harán via: <b><a href="https://discord.com/channels/957849032531796019/1178042526398156810" target="_blank">Donaciones</a></b> .
+                                                    </p>
+                                                    <p>
+                                                        <br>
+                                                    <p>
+                                                        <span style="color: #90EE90;">【💰】𝐃𝐎𝐍𝐀𝐃𝐎𝐑:</span> [Cualquier donación]<br>
+                                                        <span style="color: gold;">【👑】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐏𝐑𝐄𝐌𝐈𝐔𝐌:</span> [Más de $3,682 (MXN)]<br>
+                                                        <span style="color: #00FFFF;">【💎】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄:</span> [Más de $9,207 (MXN)]<br>
+                                                        <span style="color: #C0C0C0;">【🔱】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐏𝐋𝐀𝐓𝐈𝐍𝐎:</span> [Más de $18,414 (MXN)]<br>
+                                                        <span style="color: #00FF00;">【☢️】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐍𝐔𝐂𝐋𝐄𝐀𝐑:</span> [Más de $64,450 (MXN)]<br>
+                                                        <span style="color: purple;">【⚛️】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐀𝐓Ó𝐌𝐈𝐂𝐎:</span> [Más de $100,000 (MXN)]<br>
+                                                    </p>
+
+                                                    <br>
+                                                    Rango Donador Personalizado: [Total de $180,000 (MXN)]
+                                                    (El que tu quieras y aplica a un Titulo personalizado dentro del juego)
+                                                    <br>
+                                                    </p>
+                                                    <p>
+                                                        Después de realizar la donación por la cantidad seleccionada, te invitamos a enviar un ticket al soporte. Esto nos permitirá validar la transacción y acreditar las luminas o tapas correspondientes de manera interactiva.
+                                                    </p>
+                                                    <p>
+                                                        Cada donación tiene beneficios en el juego y en discord. Por ejemplo, si agrega el canal de discord también se le agregará el Título correspondiente a la donación acomulada.
+                                                    </p>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <br />
+                                                    <p class="text-center"> <b>
+                                                            <center>
+                                                                <h2 id="sSuscripciones"> Beneficios según la donación [Luminas/Tapas] </h2>
+                                                            </center>
+                                                        </b></p>
+                                                    <br />
+                                                    <table>
+                                                        <tr class='trTable'>
+                                                            <td class='p-description'><span style="color: #90EE90;">【💰】𝐃𝐎𝐍𝐀𝐃𝐎𝐑:</span></td>
+                                                            <td class='p-description'>
+                                                                <div class="description-box" style="border: 2px solid #90EE90;">
+                                                                    <ul class="donation-list">
+                                                                        <li>
+                                                                            <span style="color: #90EE90;">Rol de Donador en Discord</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span style="color: #90EE90;">Título [𝐃𝐎𝐍𝐀𝐃𝐎𝐑]</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class='trTable'>
+                                                            <td class='p-description'><span style="color: gold;">【👑】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐏𝐑𝐄𝐌𝐈𝐔𝐌:</span></td>
+                                                            <td class='p-description'>
+                                                                <div class="description-box" style="border: 2px solid gold;">
+                                                                    <ul class="donation-list" style="color: #FFD700;">
+                                                                        <li>
+                                                                            <span style="color: #FFD700;">Rol de Donador Premium en Discord</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span style="color: #FFD700;">Título [𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐏𝐑𝐄𝐌𝐈𝐔𝐌]</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="golden-text">Acceso al salón de los campeones con tu nombre en cada estatua</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            Aura de Dorado
+                                                                        </li>
+                                                                        <li class="navajowhite-text">
+                                                                            Bonus de experiencia de 1%
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class='trTable'>
+                                                            <td class='p-description'><span style="color: #00FFFF;">【💎】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄:</span></td>
+                                                            <td class='p-description'>
+                                                                <div class="description-box" style="border: 2px solid #00FFFF;">
+                                                                    <ul class="donation-list" style="color: #00FFFF;">
+                                                                        <li>
+                                                                            <span style="color: #00FFFF;">Rol de Donador Diamante en Discord</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span style="color: #00FFFF;">Título [𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄]</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="golden-text">Acceso al salón de los campeones con tu nombre en cada estatua</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            Aura de Diamante
+                                                                        </li>
+                                                                        <li class="navajowhite-text">
+                                                                            Bonus de experiencia de 2%
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class='trTable'>
+                                                            <td class='p-description'><span style="color: #C0C0C0;">【🔱】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐏𝐋𝐀𝐓𝐈𝐍𝐎:</span></td>
+                                                            <td class='p-description'>
+                                                                <div class="description-box" style="border: 2px solid #C0C0C0;">
+                                                                    <ul class="donation-list" style="color: #C0C0C0;">
+                                                                        <li>
+                                                                            <span style="color: #C0C0C0;">Rol de Donador Platino en Discord</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span style="color: #C0C0C0;">Título [𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐏𝐋𝐀𝐓𝐈𝐍𝐎]</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="golden-text">Acceso al salón de los campeones con tu nombre en cada estatua</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            Aura de Platino
+                                                                        </li>
+                                                                        <li class="navajowhite-text">
+                                                                            Bonus de experiencia de 3%
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class='trTable'>
+                                                            <td class='p-description'><span style="color: #00FF00;">【☢️】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐍𝐔𝐂𝐋𝐄𝐀𝐑:</span></td>
+                                                            <td class='p-description'>
+                                                                <div class="description-box" style="border: 2px solid #00FF00;">
+                                                                    <ul class="donation-list" style="color: #00FF00;">
+                                                                        <li>
+                                                                            <span style="color: #00FF00;">Rol de Donador Nuclear en Discord</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span style="color: #00FF00;">Título [𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐍𝐔𝐂𝐋𝐄𝐀𝐑]</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="golden-text">Acceso al salón de los campeones con tu nombre en cada estatua</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            Aura de Donador Nuclear
+                                                                        </li>
+                                                                        <li class="navajowhite-text">
+                                                                            Bonus de experiencia de 4%
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class='trTable'>
+                                                            <td class='p-description'><span style="color: purple;">【⚛️】𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐀𝐓Ó𝐌𝐈𝐂𝐎:</span></td>
+                                                            <td class='p-description'>
+                                                                <div class="description-box" style="border: 2px solid purple;">
+                                                                    <ul class="donation-list" style="color: purple;">
+                                                                        <li>
+                                                                            <span style="color: purple;">Rol de Donador Atómico en Discord</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span style="color: purple;">Título [𝐃𝐎𝐍𝐀𝐃𝐎𝐑 𝐀𝐓Ó𝐌𝐈𝐂𝐎]</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="golden-text">Acceso al salón de los campeones con tu nombre en cada estatua</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            Aura de Donador Atómico
+                                                                        </li>
+                                                                        <li class="navajowhite-text">
+                                                                            Bonus de experiencia de 5%
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <br>
+                                                    <hr color="#00FF00"><br>
+                                                    <p>
+                                                        En el futuro iremos incorporando nuevos beneficios a las donaciones.
+                                                    </p>
+                                                    <p style="color: red;">ADVERTENCIA:</p>
+                                                    <p style="color: navajowhite;">El procedimiento de donación por recompensa únicamente se realiza a través de <a href="https://discord.com/channels/957849032531796019/1178042526398156810" target="_blank" style="color: violet; text-decoration: underline;">Donaciones de Discord</a>. [D-E-L-U-X-I-A], Rodrigo_Zacky o ZACKY, también conocido como Rodrigo Beristain, no se hacen responsables por la falta de comprensión lectora y por no leer las reglas y términos de servicio.</p>
+
+                                                    </font>
+                                            </div>
+                                            </td>
+                                            </tr>
+                                            </center>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <br><br> <br><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+        </div></span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="flex flex-col xl:flex-row min-h-screen bg-zinc-900 max-w-14xl border-r border-zinc-700">
+        <!--[-->
+        <div class="nuxt-loading-indicator" style="position:fixed;top:0;right:0;left:0;pointer-events:none;width:auto;height:3px;opacity:0;background:#84cc16;background-size:Infinity% auto;transform:scaleX(0%);transform-origin:left;transition:transform 0.1s, height 0.4s, opacity 0.4s;z-index:999999;"></div>
+        <div id="frame" class="w-full h-full absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 pointer-events-none z-0">
+            <div style="position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 50; top: 30%; transform: translateY(-50%);">
+                <img src="assets/images/Logosinfondo.png" alt="Logo" style="max-width: 70%; max-height: 70%; opacity: 0.2;">
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rodrigo_Zacky">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Una instalación de investigación de clase mundial especializada en el estudio de infecciones virales, patología de zombis y enfermedades físicas en escenarios de brotes potenciales de enfermedades infecciosas.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Laboratorio [D-E-L-U-X-I-A]">
+    <meta property="og:description" content="Una instalación de investigación de clase mundial especializada en el estudio de infecciones virales, patología de zombis y enfermedades físicas en escenarios de brotes potenciales de enfermedades infecciosas.">
+    <meta property="og:image" content="https://xzackyx.github.io/Manual-para-supervivientes//share.png">
+    <meta property="og:url" content="https://xzackyx.github.io/Manual-para-supervivientes/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Laboratorio [D-E-L-U-X-I-A]">
+    <meta name="twitter:description" content="Una instalación de investigación de clase mundial especializada en el estudio de infecciones virales, patología de zombis y enfermedades físicas en escenarios de brotes potenciales de enfermedades infecciosas.">
+    <meta name="twitter:image" content="https://xzackyx.github.io/Manual-para-supervivientes//share.png">
+
+    <title>[D-E-L-U-X-I-A] - Terminal</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/zombie.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+    #console-window {
+        background: black;
+        color: #88FE87;
+        padding: 15px;
+        border-radius: 8px;
+        height: 100%;
+        overflow-y: auto;
+        font-family: "Inconsolata", monospace;
+    }
+
+    .cmdline {
+        background: transparent;
+        border: none;
+        color: #88FE87;
+        outline: none;
+        font-family: "Inconsolata", monospace;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .line {
+        padding: 4px 0;
+    }
+
+    .prompt {
+        color: #88FE87;
+    }
+
+.line {
+    margin-bottom: 5px;
+    color: #00FF00; /* Asegura que el texto de cada línea sea verde */
+}
+    </style>
+</head>
+
+<body>
+    <div id="virus"></div>
+
+    <!-- Tu script JS para zombies.js -->
+    <script type="module" src="assets/js/zombies.js"></script>
+
+    <!-- Main content -->
+    <div class="bg-black font-sans select-none">
+        <div id="__nuxt">
+            <div id="main" class="flex flex-col xl:flex-row min-h-screen" style="background-color: #000000; border-right: 1px solid #1f2937;">
+                <!-- Main Content -->
+                <div class="nuxt-loading-indicator" style="position:fixed;top:0;right:0;left:0;pointer-events:none;width:auto;height:3px;opacity:0;background:#14b8a6;background-size:Infinity% auto;transform:scaleX(0%);transform-origin:left;transition:transform 0.1s, height 0.4s, opacity 0.4s;z-index:999999;"></div>
+                <div class="m-6 mb-0 md:m-12 md:mb-0 xl:mb-12 xl:mr-0 flex-1 max-w-7xl lg:pointer-events-none z-10">
+                    <div class="divide-y divide-gray-700 overflow-hidden rounded-lg sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 auto-rows-min border border-gray-900 h-full grid-rows-2">
+                        <!-- Terminal Window -->
+                        <div class="group pattern col-span-2 row-span-full">
+                            <div class="p-6 md:p-12 h-full">
+                                <div id="console-window" class="bg-zinc-900/75 rounded-lg px-2 h-full border border-zinc-700">
+                                    <output class="text-gray-200"></output>
+                                    <div id="command-line" class="flex space-x-2 text-gray-200">
+                                        <div class="prompt mt-0.5">$&gt;</div>
+                                        <div><input id="command-input" class="cmdline" autofocus></div>
+                                    </div>
+                                    <audio id="terminal-welcome" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                        <source src="assets/sonidos/terminal-welcome.ogg" type="audio/ogg"></audio>
+                                    <audio id="terminal-error" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                        <source src="assets/sonidos/terminal-error.ogg" type="audio/ogg"></audio>
+                                    <audio id="terminal-success" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                        <source src="assets/sonidos/terminal-success.ogg" type="audio/ogg"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Other Content -->
+                <div class="flex flex-col flex-1 lg:pointer-events-none">
+                    <header aria-labelledby="header-heading" class="flex flex-col flex-1">
+                        <h2 id="header-heading" class="sr-only"> Header </h2>
+                        <div class="flex-1 px-0 py-6 m-12 md:m-24">
+                            <!--[-->
+                            <div class="sticky z-20 top-24 flex justify-between items-center"><img src="assets/images/logo.svg" alt="Logo" class="h-8 w-auto mb-2 max-w-full text-gray-200">
+                                <div class="text-right text-white text-xs">
+                                    <div class="space-x-4 flex">
+                                        <div><span id="info-generation"> 0 </span><span> CIVILES MUERTOS 💀 </span></div>
+                                        <div><span id="info-life-cell"> 0 </span><span> ZOMBIS DETECTADOS ☢️ </span></div>
+                                    </div>
+                                    <div class="space-x-4"><span id="game__panel-button-1" class="pointer-events-auto cursor-pointer hover:text-teal-500"> Organización </span><span id="game__panel-button-2" class="pointer-events-auto cursor-pointer hover:text-teal-500"> [D-E-L-U-X-I-A] </span></div>
+                                </div>
+                            </div>
+                            <div id="game" class="game fixed top-0 left-0 z-50 w-full h-full pointer-events-none"><canvas id="game__world" class="game__world"></canvas></div>
+                            <!--]-->
+                        </div>
+                    </header>
+                    <div class="px-12 py-6 md:px-24 md:py-12 border-t border-gray-700 z-10">
+                        <nav class="grid grid-cols-2 md:grid-cols-4 gap-y-12 uppercase relative">
+                            <div class="space-y-12">
+                                <div><span class="text-gray-400 uppercase">
+                                        <!--[--> Investigación
+                                        <!--]--></span>
+                                    <ul role="list" class="mt-6 space-y-3">
+                                        <li><a href="N-Z.html" class="hover:text-red-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full pointer-events-auto" id="pest">
+                                                <!--[--> N-Z
+                                                <!--]-->
+                                                <!----><audio data-id="pest-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="pest-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="pest-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="pest-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-12">
+                                <div><span class="text-gray-400 uppercase">
+                                        <!--[--> Organización
+                                        <!--]--></span>
+                                    <ul role="list" class="mt-6 space-y-3">
+                                        <li><a href="Organización.html" class="hover:text-teal-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full pointer-events-auto" id="about">
+                                                <!--[--> [D-E-L-U-X-I-A]
+                                                <!--]-->
+                                                <!----><audio data-id="bios-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="bios-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="bios-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="bios-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-12">
+                                <div><span class="text-gray-400 uppercase">
+                                        <!--[--> Protocolo
+                                        <!--]--></span>
+                                    <ul role="list" class="mt-6 space-y-3">
+                                        <li><a href="Épsilon.html" class="hover:text-purple-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full pointer-events-auto" id="necro">
+                                                <!--[--> Épsilon
+                                                <!--]-->
+                                                <!----><audio data-id="necro-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="necro-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="necro-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="necro-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-12">
+                                <div><span class="text-gray-400 uppercase">
+                                        <!--[--> Laboratorios
+                                        <!--]--></span>
+                                    <ul role="list" class="mt-6 space-y-3">
+                                        <li><a href="Laboratorios.html" class="hover:text-teal-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full pointer-events-auto" id="about">
+                                                <!--[--> [D-E-L-U-X-I-A]
+                                                <!--]-->
+                                                <!----><audio data-id="about-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="about-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="about-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="about-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                                    <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <footer aria-labelledby="footer-heading" class="flex flex-col flex-1">
+                            <h2 id="footer-heading" class="sr-only"> Footer </h2>
+                            <div class="flex md:items-center justify-between mt-6 pt-6 md:mt-12 md:pt-12 border-t border-gray-700">
+                                <div class="flex items-center space-x-2"><span class="inline text-xs text-gray-400 uppercase"> Organización — [D-E-L-U-X-I-A] </span><a aria-current="page" href="terminal.html" class="router-link-active router-link-exact-active hover:text-teal-500 inline-flex items-center px-2 -ml-2 text-white focus:outline-none focus:ring-1 ring-white rounded-full pointer-events-auto" id="terminal">
+                                        <!--[--> Terminal
+                                        <!--]-->
+                                        <!----><audio data-id="terminal-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="terminal-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/navigation-hover.ogg" type="audio/ogg"></audio><audio data-id="terminal-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="terminal-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></div>
+                                <div class="flex items-center justify-start sm:justify-end space-x-2"><a onclick="window.close();" rel="noopener noreferrer" target="_blank" id="footer-facebook" class="hover:text-red-500 w-7 h-7 flex items-center justify-center focus:outline-none focus:ring-1 ring-white text-white rounded-full pointer-events-auto"><span class="sr-only">Facebook</span>
+                                        <!--[--><svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+                                        </svg>
+                                        <!--]--><audio data-id="footer-facebook-focus" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-focus.ogg" type="audio/ogg"></audio><audio data-id="footer-facebook-hover" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/footer-hover.ogg" type="audio/ogg"></audio><audio data-id="footer-facebook-click" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-click.ogg" type="audio/ogg"></audio><audio data-id="footer-facebook-release" controls class="invisible absolute w-0 h-0" tabindex="-1">
+                                            <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a></div>
+                                <source src="assets/sonidos/main-release.ogg" type="audio/ogg"></audio></a>
+                            </div>
+                            </ul>
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const inputElement = document.getElementById('command-input');
+    const outputElement = document.querySelector('#console-window > output');
+    const terminalWelcome = document.getElementById('terminal-welcome');
+    const terminalError = document.getElementById('terminal-error');
+    const terminalSuccess = document.getElementById('terminal-success');
+
+    const commands = {
+        ayuda: () => "Lista de comandos disponibles:\n- ayuda: Muestra esta ayuda.\n- limpiar: Limpia la pantalla.\n- informe: Muestra información sobre [D-E-L-U-X-I-A].\n- salir: Salir del terminal.\n- fecha: Muestra la fecha y hora actual.\n- recuperar: Revela datos ocultos sobre la historia.",
+        limpiar: () => { 
+            outputElement.innerHTML = ""; 
+            return "Pantalla limpia."; // Mensaje específico para el comando limpiar
+        },
+        informe: () => `[D-E-L-U-X-I-A] fue fundada en 2043 en medio del caos global causado por la pandemia del Virus N-Z. Su misión es salvar lo que queda de la humanidad a través de la ciencia y la fuerza militar.\n\nEn 2045, [D-E-L-U-X-I-A] se estableció como la última esperanza de la humanidad, con su sede en una isla secreta ahora conocida como [D-E-L-U-X-I-A]. La organización se centró en asegurar puntos estratégicos alrededor de Los Santos y recuperar recursos vitales.\n\nDurante el período de 2046 a 2055, [D-E-L-U-X-I-A] amplió su influencia, estableciendo una red de enclaves seguros a lo largo del estado de San Andreas. Desarrolló el Protocolo Neón, mejorando las capacidades de sus Supervivientes con mejoras cibernéticas y biológicas.\n\nEn 2056, la organización lanzó la Operación Leviatán para retomar Cayo Perico y descubrir la fuente de las nuevas mutaciones del Virus N-Z. En 2063, descubrieron la Fuente Primaria, el origen de las mutaciones, y aunque lograron neutralizarla en 2065, la organización quedó severamente debilitada.\n\nDesde 2066, Cayo Perico fue abandonada debido a la falta de personal. La búsqueda de una cura definitiva continúa con el Protocolo Épsilon, y aunque se ha ganado una batalla, la guerra contra el Virus N-Z sigue en curso.`,
+        salir: () => window.close(),
+		RPMI: () => `🔍 Has descubierto un secreto oculto! [D-E-L-U-X-I-A] tiene una unidad de investigacion secreta conocida como 'Operacion Fenix', cuyo objetivo es explorar nuevas dimensiones para encontrar recursos raros que podrian ser la clave para una cura definitiva.`,
+        FBRO: () => `🔍 Interesante hallazgo! Los registros indican que un antiguo lider de [D-E-L-U-X-I-A], el General Armitage, desaparecio misteriosamente en 2048. Se rumorea que podria estar en una instalacion oculta bajo las Montanas de San Andreas.`,
+        LSVA: () => `🔬 Analisis en curso... Se ha encontrado una anomalía en los datos de mutacion del Virus N-Z. Algunos sujetos muestran signos de evolucion hacia formas inteligentes que podrian cambiar el equilibrio de poder en el campo de batalla.`,
+        VFOC: () => `📝 Mensaje encriptado recibido: 'La clave para resolver el enigma esta en las ruinas del viejo laboratorio. Busca el artefacto escondido en las profundidades.`,
+        HODM: () => `📜 Historial de eventos: En 2054, una mision encubierta de [D-E-L-U-X-I-A] descubrio una red secreta de sobrevivientes que habian desarrollado una variante del Virus N-Z que podria ser la base para una cura.`,
+        DFQR: () => `📍 Ubicacion confidencial: Se ha identificado una instalacion subterránea en el desierto de San Andreas que podria contener tecnologia avanzada perdida durante el colapso global.`,
+        GYMO: () => `🔍 Investigando... Los datos sugieren que hay una conexion entre los experimentos de Humane Labs y una red de tuneles secretos que se extienden por debajo de Los Santos, posiblemente relacionadas con el Virus N-Z.`,
+        FNVZ:    () => `🚨 Alerta de seguridad: Se ha detectado una actividad inusual en el oceano, creemos qué es La base de los Marea Roja usando el portaaviones USS Luxington, el radar muestra que se puede encontrar en la esquina más al sureste pasando el aeropuerto internacional de Los Santos y entre Cayo Perico.`,
+        GJOR: () => `🔑 Codigo desbloqueado: 'HDHL'. Este codigo proporciona acceso a archivos de investigacion clasificados sobre el desarrollo del Virus N-Z y su impacto en el ecosistema local.`,
+        HDHL: () => `🔎 Descubrimiento reciente: Un antiguo laboratorio de Humane Labs ha sido encontrado intacto bajo Cayo Perico. Los equipos de [D-E-L-U-X-I-A] estan en proceso de examinar los equipos y registros dejados atras, se cree qué fue la causa de las nuevas mutaciones del N-Z.`,
+        fecha: () => new Date().toLocaleString(),
+        recuperar: (clave) => {
+            const secretos = {
+                "Proyecto Genesis": "El Proyecto Genesis, iniciado por Humane Labs & Research en 2023, fue un intento de crear armas biológicas avanzadas. Sin embargo, su fracaso llevó al brote del Virus N-Z, provocando el colapso global.",
+                "Faro de El Gordo": "El Faro de El Gordo, descubierto en 2052, contiene tecnología experimental crucial para la creación de una vacuna definitiva contra el Virus N-Z. Su ubicación y propósito han sido un secreto celosamente guardado por [D-E-L-U-X-I-A].",
+                "Fuente Primaria": "La Fuente Primaria, localizada en Cayo Perico en 2063, es un nodo biológico central en el desarrollo del Virus N-Z. Su neutralización en 2065 fue un avance significativo, aunque costó caro a [D-E-L-U-X-I-A].",
+                "Operación Leviatán": "Lanzada en 2056, la Operación Leviatán fue una campaña crucial para retomar Cayo Perico y descubrir las nuevas mutaciones del Virus N-Z. Fue una de las misiones más costosas y arriesgadas emprendidas por [D-E-L-U-X-I-A]."
+            };
+
+            return secretos[clave] || "Clave no reconocida. Intenta con 'Proyecto Genesis', 'Faro de El Gordo', 'Fuente Primaria' o 'Operación Leviatán'.";
+        }
+    };
+
+    function executeCommand(command) {
+        const [cmd, ...args] = command.trim().split(/\s+/);
+        if (commands[cmd]) {
+            const result = commands[cmd](args.join(' '));
+            if (result !== undefined) {
+                outputElement.innerHTML += `<div class="line">${result}</div>`;
+            }
+        } else {
+            outputElement.innerHTML += `<div class="line">Comando no reconocido: ${cmd}</div>`;
+        }
+        outputElement.scrollTop = outputElement.scrollHeight;
+        playSound('terminal-success');
+    }
+
+    function playSound(id) {
+        const audio = document.getElementById(id);
+        if (audio) {
+            audio.currentTime = 0;
+            audio.play();
+        }
+    }
+
+    // Inicializa el terminal con un mensaje de bienvenida
+    outputElement.innerHTML = '<div class="line">Bienvenido al terminal del [S-I-M-S-S-D]. Por favor ingrese el código del archivo para acceder a él...</div>';
+
+    // Reproduce el sonido de bienvenida
+    playSound('terminal-welcome');
+
+    // Asegura que el campo de entrada tenga el foco
+    function focusInput() {
+        inputElement.focus();
+    }
+
+    inputElement.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const command = inputElement.value;
+            outputElement.innerHTML += `<div class="line">${command}</div>`;
+            executeCommand(command);
+            inputElement.value = '';
+            event.preventDefault();
+        }
+    });
+
+    // Enfoca el campo de entrada cuando el usuario haga clic en cualquier parte de la ventana
+    document.addEventListener('click', function(event) {
+        if (event.target !== inputElement) {
+            inputElement.focus();
+        }
+    });
+
+    // Inicialmente enfoca el campo de entrada
+    focusInput();
+});
+
+    </script>
